@@ -23,6 +23,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="filerwtest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="filematrix.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="fileset.py">
       <SubType>Code</SubType>
     </Compile>
