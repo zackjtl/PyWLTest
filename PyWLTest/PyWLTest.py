@@ -1,67 +1,46 @@
+import sys
+import fiotest
+import diskutil
+import os
+
 from fileset import *
 from filematrix import *
+from ctypes import *
 
-import sys
+def dotest():
+	print("start test..\n")
 
-org_stdout = sys.stdout
+	#org_stdout = sys.stdout
 
-log = open(r'pythonlog.txt', 'w')
-sys.stdout = log
-sys.modules['fileset'].init(0x12345677)
+	#log = open(r'pythonlog.txt', 'w')
+	#sys.stdout = log
+	sys.modules['fileset'].init(0x12345677)
 
-capacity = 67108864
-fs1 = fileset('k:\\', capacity * 0.0005, 4, 1024, Active.static)
-fs1.reset()
+	capacity = int(diskutil.get_disk_size('K:\\')['total'] / 512)
+	fs1 = fileset('k:\\', capacity * 0.004, 1024, 4096, Active.static)
+	fs1.reset()
 
-fs2 = fileset('k:\\', capacity * 0.0005, 4, 1024, Active.dynamic)
-fs2.reset()
+	fs2 = fileset('k:\\', capacity * 0.004, 1024, 4096, Active.dynamic)
+	fs2.reset()
 
-fs3 = fileset('k:\\', capacity * 0.0005, 4, 1024, Active.dynamic)
-fs3.reset()
+	fmt = filematrix((fs1, fs2), Relationship.ordered)
 
-"""
-while(fs1.done() == False):
-    fp = fs1.next()
-    print('path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
+	fiotest.debug_info_en()
 
-while(fs2.done() == False):
-    fp = fs2.next()
-    print('path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
+	fio = fiotest.fio_test('K:\\', fmt, 0x12345678)
+	print('delete all')
+	fio.delete_all()
+	print('write all')
+	fio.write_all()
+	print('read & compare all')
+	fio.read_all()
 
-while(fs3.done() == False):
-    fp = fs3.next()
-    print('path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
-"""
+	#sys.stdout = org_stdout
 
-fmt = filematrix((fs1, fs2, fs3), Relationship.crossed)
+	print('average write performance: ', fio.get_last_write_perf(), ' MB/s')
+	print('average read performance: ', fio.get_last_read_perf(), ' MB/s')
 
-while not fmt.done():
-    fp = fmt.next()
-    #print('path: ', fp.path)
-    print('path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
-
-print('\n=========== Dynamic ==========\n')
-
-fmt.reset()
-
-while not fmt.done():
-    fp = fmt.next_dynamic()
-    #print('path: ', fp.path)
-    print('path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
-
-
-
-
-"""
-fs1 = fileset('k:\\', capacity * 0.6, 4, 1024, Active.dynamic, 0x12345678)
-fs2 = fileset('k:\\', capacity * 0.4, 4, 1024, Active.dynamic,0x12345678)
-
-print(fs1.prefix);
-print(fs1.path); 
-print(fs2.prefix);
-print(fs2.path);
-
-ftx1 = filematrix((fs1, fs2), Relationship.sequential, 0x12345678)
-"""
-
-sys.stdout = org_stdout
+if __name__ == '__main__':
+	dotest()
+else:
+	pass

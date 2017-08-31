@@ -10,16 +10,21 @@ class filematrix(object):
     """a filematrix included one or more fileset that and descript the relative order between each fileset """    
 
     def __init__(self, filesets, relationship = Relationship.ordered, seed = 0x12345678):
-        if type(filesets) is not tuple:
+        if type(filesets) != tuple:
             raise TypeError("the second input argument filesets must be a tuple like (fs, ) or (fs1, fs2)")
                     
         for item in filesets:
-            if type(item) is not fileset:
+            if type(item) != fileset:
                 raise TypeError("the elements in the filesets tuple must be a fileset")
 
         self.filesets = filesets
         self.relationship = relationship
-        self.seed = seed          
+        self.seed = seed     
+        self.total_sectors = 0
+
+        for fs in self.filesets:
+            self.total_sectors += fs.total_sectors
+                             
         self.reset()        
     
     def reset(self):           

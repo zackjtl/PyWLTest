@@ -23,9 +23,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="filerwtest.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="diskutil.py" />
+    <Compile Include="fiotest.py" />
     <Compile Include="filematrix.py">
       <SubType>Code</SubType>
     </Compile>
@@ -33,6 +32,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="name_gen.py" />
+    <Compile Include="pattern.py" />
     <Compile Include="PyWLTest.py" />
   </ItemGroup>
   <PropertyGroup>
