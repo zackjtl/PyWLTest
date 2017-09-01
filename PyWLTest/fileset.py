@@ -26,7 +26,7 @@ class Active(enum.Enum):
 class file_parameter:
 	""" the parameters descript a single file to access on the target disk (read or write) """
 	def __init__(self, folder, name, size, rand_seed):
-		self.path = folder + '\\' + name
+		self.path = folder + '\\' + name + '.bin'
 		self.folder = folder
 		self.name = name
 		self.size = int(size)

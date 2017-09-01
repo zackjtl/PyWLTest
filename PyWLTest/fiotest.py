@@ -3,12 +3,18 @@ import logging
 import os
 import pattern
 import time
+import iolib
+
+import win32pipe, win32file
 import win32file
+
+import socket
 
 from filematrix import *
 from fileset import *
 from diskutil import *
 from ctypes import *
+from contextlib import contextmanager
 
 def debug_info_en():
 	logging.basicConfig(level=logging.INFO)
@@ -27,9 +33,35 @@ class fio_test(object):
 		self.written_sectors = 0
 		self.readed_sectors = 0
 		self.randlib = WinDLL(thisdir + '\\random.dll')
-				
+		self.terminated = False				
 		self.__prepair_patterns()
+		self.__create_read_pipe()
 		self.reset()
+
+	def __exit__(self):
+		self.sock.close()
+
+	def __create_read_pipe(self):
+		self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+		self.sock.bind(('127.0.0.1', 50001))  		
+		self.sock.setblocking(0)
+
+	def __check_terminated(self):
+		if (self.terminated == True):
+			return True
+
+		try:
+			data = self.sock.recvfrom(1024)
+		except:
+			data = None
+		
+		self.terminated = False
+		if (data != None):
+			if ('terminated'.encode('utf-8') in data[0]):
+				self.terminated = True
+			else:
+				self.terminated = False
+		return self.terminated
 
 	def __prepair_patterns(self):
 		""" Create an amount of bytearray of test patterns, these is a ring to make contents of the test files.
@@ -55,8 +87,10 @@ class fio_test(object):
 
 	def delete_all(self):
 		""" delete all files in the root path """ 
+		if (self.__check_terminated()):
+			return;	
 		delete_dir(self.root)
-		time.sleep(0.3)
+		time.sleep(0.3)		
 
 	def __make_chunk_pattern(self, chunk_sectors:int):
 		""" [private method] this is for create the chunk data """
@@ -80,13 +114,16 @@ class fio_test(object):
 		""" [private method] the real write function """
 		self.reset()
 		self.written_sectors = 0
-		self.write_elapsed = 0.0					 
-
+		self.write_elapsed = 0.0		
+		
 		while not self.filematrix.done():		
+			if (self.__check_terminated()):
+				return;
+
 			if (kind == 'all'):
 				fp = self.filematrix.next()
 			elif (kind == 'dynamic'):
-				fp = self.filematrix.next_dynamic()
+				fp = self.filematrix.next_dynamic()				
 
 			logging.info('write path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
 
@@ -100,36 +137,33 @@ class fio_test(object):
 				os.mkdir(fp.folder)	
 				
 			time.sleep(0.001)				
-					
+				
 			try:							
-				with open(fp.path, 'wb', 0) as f:
+				with iolib.fopen(fp.path, 'wb') as f:
 					pass				
 			except (PermissionError) as err:			
 				raise(err)
 											 
-			with open(fp.path, 'ab', 0) as f:
+			with iolib.fopen(fp.path, 'ab') as f:
 				remain = fp.size
 				file_time = 0.0
 				start = 0.0
 				elapsed = 0.0
 				
 				while (remain != 0):
-					chunk_sectors = min(remain, self.max_buff_size)									
-					buff = self.__make_chunk_pattern(chunk_sectors)
+					if (self.__check_terminated()):
+						return;
 
-					start = time.time()					
-					written = f.write(buff)
-					f.flush()
-					os.fsync(f)
-					elapsed = time.time() - start
+					chunk_sectors = min(remain, self.max_buff_size)									
+					buff = self.__make_chunk_pattern(chunk_sectors)					
+					written, elapsed = iolib.write(buff, 512, chunk_sectors, f)
 					file_time += elapsed
 																						   
-					self.written_sectors += int(written / 512)
+					self.written_sectors += int(written)
 					remain = remain - chunk_sectors
 				
 				self.write_elapsed += file_time
 		
-				f.close()
 				time.sleep(0.001)
 
 	def read_all(self, max_sectors:int=0):
@@ -146,7 +180,10 @@ class fio_test(object):
 		self.readed_sectors = 0
 		self.read_elapsed = 0.0	
 
-		while not self.filematrix.done():			
+		while not self.filematrix.done():		
+			if (self.__check_terminated()):
+				return;			
+				
 			if (kind == 'all'):
 				fp = self.filematrix.next()
 			elif (kind == 'dynamic'):
@@ -159,41 +196,41 @@ class fio_test(object):
 
 			file_time = 0.0
 			start = time.time()
-									
-			try:
-				handle = win32file.CreateFile(fp.path, win32file.GENERIC_READ, win32file.FILE_SHARE_READ, None, win32file.OPEN_EXISTING, win32file.FILE_ATTRIBUTE_NORMAL | win32file.FILE_FLAG_NO_BUFFERING, None)
-				remain = fp.size	
-
-				while (remain != 0):
-					chunk_sectors = min(remain, self.max_buff_size)						
-					pat = self.__make_chunk_pattern(chunk_sectors)
-					read_len = chunk_sectors * 512	
-					start = time.time()		
-					result, data = win32file.ReadFile(handle, read_len, None)
-					elapsed = time.time() - start
-					file_time += elapsed
-					if (data != pat):
-						raise(Exception("compare error at the file:" + fp.path))
-
-					remain = remain - chunk_sectors
-					self.readed_sectors += int(len(data) / 512)
-
-			except (Exception) as err:
-				win32file.CloseHandle(handle)
-				raise(err)
-			except (IOError):
-				win32file.CloseHandle(handle)
-				raise(BaseException("read file error"))
-			else:
-				win32file.CloseHandle(handle)
 			
-			self.read_elapsed += file_time		 
-			time.sleep(0.001)
+			with iolib.fopen(fp.path, 'rd') as f:
+				remain = fp.size
+				file_time = 0.0
+				start = 0.0
+				elapsed = 0.0
+				
+				while (remain != 0):
+					if (self.__check_terminated()):
+						return;
+
+					chunk_sectors = min(remain, self.max_buff_size)									
+					expected = self.__make_chunk_pattern(chunk_sectors)					
+
+					real, bytesRead, elapsed = iolib.read(512 * chunk_sectors, f)
+					file_time += elapsed
+							
+					if (real != expected):
+						raise(Exception("compare error at the file:" + fp.path))					
+																				   
+					self.readed_sectors += int(bytesRead / 512)
+					remain = remain - chunk_sectors
+				
+				self.read_elapsed += file_time
+		
+				time.sleep(0.001)					
 
 	def delete_dynamic(self):
+		if (self.__check_terminated()):
+			return;	
 		self.reset()
 
 		for fs in self.filematrix.filesets:
+			if (self.__check_terminated()):
+				return;	
 			if (fs.active is Active.dynamic):
 				delete_dir(fs.path)
 				os.rmdir(fs.path)

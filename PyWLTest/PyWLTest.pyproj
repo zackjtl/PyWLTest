@@ -31,6 +31,9 @@
     <Compile Include="fileset.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="iolib.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="name_gen.py" />
     <Compile Include="pattern.py" />
     <Compile Include="PyWLTest.py" />

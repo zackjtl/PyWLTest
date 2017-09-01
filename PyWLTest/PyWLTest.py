@@ -34,10 +34,14 @@ def dotest():
 	fio.write_all()
 	print('read & compare all')
 	fio.read_all()
-	"""
+	
 	print('delete dynamic sets')
 	fio.delete_dynamic()
 	for i in range(100):
+		if (fio.terminated):
+			print('terminated')
+			break
+
 		print('-------- loop', i, ' --------')
 		print('write dynamic')
 		fio.write_dynamic()
@@ -46,7 +50,7 @@ def dotest():
 
 		print('delete dynamic sets')
 		fio.delete_dynamic()		
-	"""
+	
 	#sys.stdout = org_stdout
 
 	print('average write performance: ', fio.get_last_write_perf(), ' MB/s')
