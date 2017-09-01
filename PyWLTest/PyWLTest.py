@@ -17,10 +17,10 @@ def dotest():
 	sys.modules['fileset'].init(0x12345677)
 
 	capacity = int(diskutil.get_disk_size('K:\\')['total'] / 512)
-	fs1 = fileset('k:\\', capacity * 0.004, 1024, 4096, Active.static)
+	fs1 = fileset('k:\\', capacity * 0.02, 1024, 4096, Active.static)
 	fs1.reset()
 
-	fs2 = fileset('k:\\', capacity * 0.004, 1024, 4096, Active.dynamic)
+	fs2 = fileset('k:\\', capacity * 0.02, 1024, 4096, Active.dynamic)
 	fs2.reset()
 
 	fmt = filematrix((fs1, fs2), Relationship.ordered)
@@ -34,7 +34,19 @@ def dotest():
 	fio.write_all()
 	print('read & compare all')
 	fio.read_all()
+	"""
+	print('delete dynamic sets')
+	fio.delete_dynamic()
+	for i in range(100):
+		print('-------- loop', i, ' --------')
+		print('write dynamic')
+		fio.write_dynamic()
+		print('read & compare dynamic')
+		fio.read_dynamic()
 
+		print('delete dynamic sets')
+		fio.delete_dynamic()		
+	"""
 	#sys.stdout = org_stdout
 
 	print('average write performance: ', fio.get_last_write_perf(), ' MB/s')

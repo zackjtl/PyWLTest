@@ -6,6 +6,7 @@ import time
 import win32file
 
 from filematrix import *
+from fileset import *
 from diskutil import *
 from ctypes import *
 
@@ -27,10 +28,10 @@ class fio_test(object):
 		self.readed_sectors = 0
 		self.randlib = WinDLL(thisdir + '\\random.dll')
 				
-		self.prepair_patterns()
+		self.__prepair_patterns()
 		self.reset()
 
-	def prepair_patterns(self):
+	def __prepair_patterns(self):
 		""" Create an amount of bytearray of test patterns, these is a ring to make contents of the test files.
 		"""
 
@@ -43,13 +44,13 @@ class fio_test(object):
 			gen(temp, self.max_buff_size * 512, self.seed+i)   
 			self.pat_array.append(temp)
 
-	def reset_pat(self):
-		""" Reset the pattern array iterator """
+	def __reset_pat(self):
+		""" [private method] Reset the pattern array iterator """
 		self.pat_it = iter(self.pat_array)
 
 	def reset(self):		
 		self.rand = random.Random(self.seed)
-		self.reset_pat()
+		self.__reset_pat()
 		self.filematrix.reset()
 
 	def delete_all(self):
@@ -57,33 +58,45 @@ class fio_test(object):
 		delete_dir(self.root)
 		time.sleep(0.3)
 
-	def make_chunk_pattern(self, chunk_sectors:int):
+	def __make_chunk_pattern(self, chunk_sectors:int):
+		""" [private method] this is for create the chunk data """
 		curr_pat = next(self.pat_it, None)
 			
 		if (curr_pat is None):
-			self.reset_pat()
+			self.__reset_pat()
 			curr_pat = next(self.pat_it, None)
 					
 		return bytearray(curr_pat[0:chunk_sectors * 512])		
 
 	def write_all(self):
 		""" write both static and dynamic files """
+		self.__write_files('all')
+
+	def write_dynamic(self):
+		""" write only dynamic files """
+		self.__write_files('dynamic')
+
+	def __write_files(self, kind:str):
+		""" [private method] the real write function """
 		self.reset()
 		self.written_sectors = 0
 		self.write_elapsed = 0.0					 
 
-		while not self.filematrix.done():			
-			fp = self.filematrix.next()
+		while not self.filematrix.done():		
+			if (kind == 'all'):
+				fp = self.filematrix.next()
+			elif (kind == 'dynamic'):
+				fp = self.filematrix.next_dynamic()
+
 			logging.info('write path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
-			filenew = False
 
 			if not os.path.exists(fp.folder):
 				try:
 					os.mkdir(fp.folder)							
-					filenew = True
 				except:
 					raise(FileNotFoundError("create directory fail"))
 			elif not os.access(fp.folder, os.F_OK):
+
 				os.mkdir(fp.folder)	
 				
 			time.sleep(0.001)				
@@ -92,7 +105,7 @@ class fio_test(object):
 				with open(fp.path, 'wb', 0) as f:
 					pass				
 			except (PermissionError) as err:			
-				raise(PermissionError("{0}: {1}, file is new ? {2}".format(err, fp.path, filenew)))
+				raise(err)
 											 
 			with open(fp.path, 'ab', 0) as f:
 				remain = fp.size
@@ -102,7 +115,7 @@ class fio_test(object):
 				
 				while (remain != 0):
 					chunk_sectors = min(remain, self.max_buff_size)									
-					buff = self.make_chunk_pattern(chunk_sectors)
+					buff = self.__make_chunk_pattern(chunk_sectors)
 
 					start = time.time()					
 					written = f.write(buff)
@@ -120,13 +133,25 @@ class fio_test(object):
 				time.sleep(0.001)
 
 	def read_all(self, max_sectors:int=0):
-		""" read and compare both static and dynamic files """
+		""" read and compare both static and dynamic files """						 
+		self.__read_files('all')
+
+	def read_dynamic(self, max_sectors:int=0):
+		""" read and compare only dynamic files """						 
+		self.__read_files('dynamic')
+
+	def __read_files(self, kind:str):
+		""" [private method] the real read function """
 		self.reset()
 		self.readed_sectors = 0
-		self.read_elapsed = 0.0					 
+		self.read_elapsed = 0.0	
 
 		while not self.filematrix.done():			
-			fp = self.filematrix.next()
+			if (kind == 'all'):
+				fp = self.filematrix.next()
+			elif (kind == 'dynamic'):
+				fp = self.filematrix.next_dynamic()
+
 			logging.info('read path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
 			
 			if not os.path.exists(fp.folder):
@@ -141,7 +166,7 @@ class fio_test(object):
 
 				while (remain != 0):
 					chunk_sectors = min(remain, self.max_buff_size)						
-					pat = self.make_chunk_pattern(chunk_sectors)
+					pat = self.__make_chunk_pattern(chunk_sectors)
 					read_len = chunk_sectors * 512	
 					start = time.time()		
 					result, data = win32file.ReadFile(handle, read_len, None)
@@ -153,7 +178,10 @@ class fio_test(object):
 					remain = remain - chunk_sectors
 					self.readed_sectors += int(len(data) / 512)
 
-			except:
+			except (Exception) as err:
+				win32file.CloseHandle(handle)
+				raise(err)
+			except (IOError):
 				win32file.CloseHandle(handle)
 				raise(BaseException("read file error"))
 			else:
@@ -162,7 +190,14 @@ class fio_test(object):
 			self.read_elapsed += file_time		 
 			time.sleep(0.001)
 
+	def delete_dynamic(self):
+		self.reset()
 
+		for fs in self.filematrix.filesets:
+			if (fs.active is Active.dynamic):
+				delete_dir(fs.path)
+				os.rmdir(fs.path)
+						
 	def get_last_write_perf(self):
 		if (self.write_elapsed == 0):
 			return 0
