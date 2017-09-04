@@ -9,6 +9,7 @@ import win32pipe, win32file
 import win32file
 
 import socket
+import IPC
 
 from filematrix import *
 from fileset import *
@@ -21,7 +22,7 @@ def debug_info_en():
 
 class fio_test(object):
 	"""test by file read write to a disk"""
-	def __init__(self, root: str, matrix: filematrix, random_seed: int):
+	def __init__(self, root: str, matrix: filematrix, random_seed: int, IPC:IPC=None):
 		thisdir = os.path.dirname(__file__)
 		self.root = root
 		self.seed = random_seed
@@ -35,33 +36,27 @@ class fio_test(object):
 		self.randlib = WinDLL(thisdir + '\\random.dll')
 		self.terminated = False				
 		self.__prepair_patterns()
-		self.__create_read_pipe()
+		self.IPC = IPC
 		self.reset()
+
+	def reset(self):		
+		self.__reset_pat()
+		self.filematrix.reset()
 
 	def __exit__(self):
 		self.sock.close()
 
-	def __create_read_pipe(self):
-		self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-		self.sock.bind(('127.0.0.1', 50001))  		
-		self.sock.setblocking(0)
-
 	def __check_terminated(self):
-		if (self.terminated == True):
-			return True
+		if (self.IPC != None):
+			self.terminated = self.IPC.terminated
+			return self.terminated
+		else:
+			return False
+	
+	def __ipc_send_status(self, input):
+			if ((self.IPC != None) and (self.IPC.connected)):
+				self.IPC.send_status(input)
 
-		try:
-			data = self.sock.recvfrom(1024)
-		except:
-			data = None
-		
-		self.terminated = False
-		if (data != None):
-			if ('terminated'.encode('utf-8') in data[0]):
-				self.terminated = True
-			else:
-				self.terminated = False
-		return self.terminated
 
 	def __prepair_patterns(self):
 		""" Create an amount of bytearray of test patterns, these is a ring to make contents of the test files.
@@ -80,17 +75,26 @@ class fio_test(object):
 		""" [private method] Reset the pattern array iterator """
 		self.pat_it = iter(self.pat_array)
 
-	def reset(self):		
-		self.rand = random.Random(self.seed)
-		self.__reset_pat()
-		self.filematrix.reset()
-
 	def delete_all(self):
 		""" delete all files in the root path """ 
+		self.__ipc_send_status('delete all')
 		if (self.__check_terminated()):
 			return;	
 		delete_dir(self.root)
 		time.sleep(0.3)		
+
+	def delete_dynamic(self):
+		self.__ipc_send_status('delete dynamic')
+		if (self.__check_terminated()):
+			return;	
+		self.reset()
+
+		for fs in self.filematrix.filesets:
+			if (self.__check_terminated()):
+				return;	
+			if (fs.active is Active.dynamic):
+				delete_dir(fs.path)
+				os.rmdir(fs.path)
 
 	def __make_chunk_pattern(self, chunk_sectors:int):
 		""" [private method] this is for create the chunk data """
@@ -104,10 +108,12 @@ class fio_test(object):
 
 	def write_all(self):
 		""" write both static and dynamic files """
+		self.__ipc_send_status('write all')
 		self.__write_files('all')
 
 	def write_dynamic(self):
 		""" write only dynamic files """
+		self.__ipc_send_status('write dynamic')
 		self.__write_files('dynamic')
 
 	def __write_files(self, kind:str):
@@ -167,11 +173,13 @@ class fio_test(object):
 				time.sleep(0.001)
 
 	def read_all(self, max_sectors:int=0):
-		""" read and compare both static and dynamic files """						 
+		""" read and compare both static and dynamic files """			
+		self.__ipc_send_status('read all')			 
 		self.__read_files('all')
 
 	def read_dynamic(self, max_sectors:int=0):
-		""" read and compare only dynamic files """						 
+		""" read and compare only dynamic files """			
+		self.__ipc_send_status('read dynamic')			 
 		self.__read_files('dynamic')
 
 	def __read_files(self, kind:str):
@@ -204,16 +212,18 @@ class fio_test(object):
 				elapsed = 0.0
 				
 				while (remain != 0):
-					if (self.__check_terminated()):
-						return;
-
 					chunk_sectors = min(remain, self.max_buff_size)									
 					expected = self.__make_chunk_pattern(chunk_sectors)					
+
+					if (self.__check_terminated()):
+						return;
 
 					real, bytesRead, elapsed = iolib.read(512 * chunk_sectors, f)
 					file_time += elapsed
 							
 					if (real != expected):
+						if (self.__check_terminated()):
+							return;
 						raise(Exception("compare error at the file:" + fp.path))					
 																				   
 					self.readed_sectors += int(bytesRead / 512)
@@ -222,18 +232,6 @@ class fio_test(object):
 				self.read_elapsed += file_time
 		
 				time.sleep(0.001)					
-
-	def delete_dynamic(self):
-		if (self.__check_terminated()):
-			return;	
-		self.reset()
-
-		for fs in self.filematrix.filesets:
-			if (self.__check_terminated()):
-				return;	
-			if (fs.active is Active.dynamic):
-				delete_dir(fs.path)
-				os.rmdir(fs.path)
 						
 	def get_last_write_perf(self):
 		if (self.write_elapsed == 0):

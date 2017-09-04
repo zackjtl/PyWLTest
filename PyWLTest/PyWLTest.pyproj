@@ -34,8 +34,14 @@
     <Compile Include="iolib.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="IPC.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="name_gen.py" />
     <Compile Include="pattern.py" />
+    <Compile Include="progress.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PyWLTest.py" />
   </ItemGroup>
   <PropertyGroup>
