@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
 import random
 import logging
 import enum
+
+from errorcode import *
 
 #the module scope static variables
 
@@ -19,7 +22,7 @@ def debug_info_en():
 
 init(1234)
 
-class Active(enum.Enum):
+class fsmode(enum.Enum):
 	static =1
 	dynamic = 2
 
@@ -36,32 +39,43 @@ class fileset(object):
 	"""fileset is the unit of a set of files to write into the testing device. 
 	A fileset have its own folder and an unique filename prefix as the difference with the others. """
 
-	def __init__(self, root, total_sectors:int, min_sectors:int=4, max_sectors:int=1024, active = Active.static, rand_seed=None):
+	def __init__(self, root, total_sectors:int, min_sectors:int=4, max_sectors:int=1024, mode = fsmode.static, seed=None):
 		global prefix_idx, path_names
 		global module_rand
+
 		self.total_sectors = total_sectors
 		self.min_sectors = min_sectors
 		self.max_sectors = max_sectors				 
 		self.max_files_per_layer = 128	 
 		self.filenumber_offset = 100000		
-		self.active = active
+		self.mode = None
 
-		if (rand_seed is None):
+		if (type(mode) == str):
+			if (mode.lower() == 'static'):
+				self.mode = fsmode.static
+			elif (mode.lower() == 'dynamic'):
+				self.mode = fsmode.dynamic
+			else:
+				raise_error(TypeError, myerror.fileset_error, 'unexpected fileset mode')
+
+		if (seed is None):
 			self.rand_seed = module_rand.randint(0, 0xffffffff)
 		else:
-			self.rand_seed = rand_seed					 
+			self.rand_seed = seed					 
 
 		if (prefix_idx > 122):
-			raise(StopIteration('out of iteration to create fileset'))
+			raise_error(StopIteration, myerror.fileset_error, 'out of iteration to create fileset')
 
 		self.prefix = chr(prefix_idx)
 
-		if (self.active == Active.static):
+		if (self.mode == fsmode.static):
 			self.path = root + 'st' + str(path_names) + self.prefix
 		else:
 			self.path = root + 'dy' + str(path_names) + self.prefix
 		prefix_idx = prefix_idx + 1
 		path_names = path_names + 1
+
+		self.total_files = self.__count_through_files()
 
 		self.reset()
 
@@ -92,6 +106,16 @@ class fileset(object):
 		fp = file_parameter(self.current_folder, name, size, self.rand.randint(0, 0xffffffff))
 		
 		return fp
+		
+	def __count_through_files(self):
+		""" don't call this during testing. Just use this in initialize """
+		counter = 0
+		self.reset()
+		
+		while (self.done() == False):
+			counter = counter + 1
+			self.next()
+		return counter
 
 	def done(self):
 		""" to check is the iterator the end of the fileset """

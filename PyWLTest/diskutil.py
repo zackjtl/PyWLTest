@@ -3,13 +3,15 @@ import logging
 import collections
 import time
  	
+from errorcode import *
+
 def debug_info_en():
 	logging.basicConfig(level=logging.INFO)
 
 def delete_dir(path):
 	logging.info('delete path: ' + path)
 	if os.path.isdir(path) == False:
-		raise("The input path to delete is not a directory")
+		raise_error(NotADirectoryError, myerror.diskutil_error, "The input path to delete is not a directory")
 	
 	for root, dirs, files in os.walk(path, topdown=False):
 		for name in files:

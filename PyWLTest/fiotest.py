@@ -16,6 +16,8 @@ from fileset import *
 from diskutil import *
 from ctypes import *
 from contextlib import contextmanager
+from errorcode import *
+from progress import *
 
 def debug_info_en():
 	logging.basicConfig(level=logging.INFO)
@@ -39,12 +41,16 @@ class fio_test(object):
 		self.IPC = IPC
 		self.reset()
 
-	def reset(self):		
+	def reset(self, lock_static:bool=None):		
 		self.__reset_pat()
-		self.filematrix.reset()
+		self.filematrix.reset(lock_static)
 
 	def __exit__(self):
 		self.sock.close()
+
+	def __output_status(self, msg:str):
+		logging.info(msg)
+		self.__ipc_send_status(msg)
 
 	def __check_terminated(self):
 		if (self.IPC != None):
@@ -54,9 +60,13 @@ class fio_test(object):
 			return False
 	
 	def __ipc_send_status(self, input):
-			if ((self.IPC != None) and (self.IPC.connected)):
-				self.IPC.send_status(input)
+		if ((self.IPC != None) and (self.IPC.connected)):
+			self.IPC.send_status(input)
 
+	def __ipc_send_progress(self, prog:progress, position):
+		if ((self.IPC != None) and (self.IPC.connected) and (prog != None)):
+			prog.set_position(position)
+			self.IPC.send_sub_progress(prog)
 
 	def __prepair_patterns(self):
 		""" Create an amount of bytearray of test patterns, these is a ring to make contents of the test files.
@@ -75,69 +85,48 @@ class fio_test(object):
 		""" [private method] Reset the pattern array iterator """
 		self.pat_it = iter(self.pat_array)
 
-	def delete_all(self):
-		""" delete all files in the root path """ 
-		self.__ipc_send_status('delete all')
-		if (self.__check_terminated()):
-			return;	
-		delete_dir(self.root)
-		time.sleep(0.3)		
-
-	def delete_dynamic(self):
-		self.__ipc_send_status('delete dynamic')
-		if (self.__check_terminated()):
-			return;	
-		self.reset()
-
-		for fs in self.filematrix.filesets:
-			if (self.__check_terminated()):
-				return;	
-			if (fs.active is Active.dynamic):
-				delete_dir(fs.path)
-				os.rmdir(fs.path)
-
-	def __make_chunk_pattern(self, chunk_sectors:int):
+	def __next_chunk_pattern(self, chunk_sectors:int):
 		""" [private method] this is for create the chunk data """
-		curr_pat = next(self.pat_it, None)
-			
+		curr_pat = next(self.pat_it, None)			
+
 		if (curr_pat is None):
 			self.__reset_pat()
 			curr_pat = next(self.pat_it, None)
 					
 		return bytearray(curr_pat[0:chunk_sectors * 512])		
 
-	def write_all(self):
-		""" write both static and dynamic files """
-		self.__ipc_send_status('write all')
-		self.__write_files('all')
+	def __random_chunk_pattern(self, chunk_sectors:int, rand_seed:int):
+		idx = rand_seed % len(self.pat_array)
+		return bytearray(self.pat_array[idx][0:chunk_sectors * 512])
 
-	def write_dynamic(self):
-		""" write only dynamic files """
-		self.__ipc_send_status('write dynamic')
-		self.__write_files('dynamic')
-
-	def __write_files(self, kind:str):
+	def __write_files(self, kind:str, prog:progress=None):
 		""" [private method] the real write function """
-		self.reset()
 		self.written_sectors = 0
 		self.write_elapsed = 0.0		
 		
+		self.filematrix.reset(kind == 'dynamic')
+	
+		self.__ipc_send_progress(prog, 0)
+
 		while not self.filematrix.done():		
 			if (self.__check_terminated()):
 				return;
 
-			if (kind == 'all'):
-				fp = self.filematrix.next()
-			elif (kind == 'dynamic'):
-				fp = self.filematrix.next_dynamic()				
+			fp = self.filematrix.next()
 
-			logging.info('write path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
+			if (kind == 'all'):
+				if (self.filematrix.current.mode == fsmode.dynamic):
+					self.__ipc_send_status("Write all files - DYNAMIC")	
+				else:
+					self.__ipc_send_status("Write all files - STATIC")							
+
+			logging.info('write path:' + fp.path + ', size: ' + str(fp.size) + ', seed: ' + str(fp.rand_seed))
 
 			if not os.path.exists(fp.folder):
 				try:
 					os.mkdir(fp.folder)							
 				except:
-					raise(FileNotFoundError("create directory fail"))
+					 raise_error(FileNotFoundError, myerror.dir_error, "create directory fail")
 			elif not os.access(fp.folder, os.F_OK):
 
 				os.mkdir(fp.folder)	
@@ -148,7 +137,7 @@ class fio_test(object):
 				with iolib.fopen(fp.path, 'wb') as f:
 					pass				
 			except (PermissionError) as err:			
-				raise(err)
+				raise_error(PermissionError, myerror.dir_error, str(err))
 											 
 			with iolib.fopen(fp.path, 'ab') as f:
 				remain = fp.size
@@ -161,7 +150,8 @@ class fio_test(object):
 						return;
 
 					chunk_sectors = min(remain, self.max_buff_size)									
-					buff = self.__make_chunk_pattern(chunk_sectors)					
+					buff = self.__random_chunk_pattern(chunk_sectors, fp.rand_seed)					
+					#buff = self.__next_chunk_pattern(chunk_sectors)	
 					written, elapsed = iolib.write(buff, 512, chunk_sectors, f)
 					file_time += elapsed
 																						   
@@ -171,49 +161,42 @@ class fio_test(object):
 				self.write_elapsed += file_time
 		
 				time.sleep(0.001)
-
-	def read_all(self, max_sectors:int=0):
-		""" read and compare both static and dynamic files """			
-		self.__ipc_send_status('read all')			 
-		self.__read_files('all')
-
-	def read_dynamic(self, max_sectors:int=0):
-		""" read and compare only dynamic files """			
-		self.__ipc_send_status('read dynamic')			 
-		self.__read_files('dynamic')
-
-	def __read_files(self, kind:str):
+			
+			self.__ipc_send_progress(prog, self.filematrix.get_progress())
+			
+	def __read_files(self, kind:str, prog:progress=None):
 		""" [private method] the real read function """
-		self.reset()
 		self.readed_sectors = 0
 		self.read_elapsed = 0.0	
+		
+		self.__ipc_send_progress(prog, 0)
+
+		self.filematrix.reset(kind=='dynamic')
 
 		while not self.filematrix.done():		
 			if (self.__check_terminated()):
 				return;			
-				
-			if (kind == 'all'):
-				fp = self.filematrix.next()
-			elif (kind == 'dynamic'):
-				fp = self.filematrix.next_dynamic()
+						
+			fp = self.filematrix.next()	
 
-			logging.info('read path:', fp.path, ', size: ', fp.size, ', seed: ', fp.rand_seed)
+			logging.info('read path:' + fp.path + ', size: ' + str(fp.size) + ', seed: ' + str(fp.rand_seed))
 			
 			if not os.path.exists(fp.folder):
-				raise FileExistsError()
+				raise_error(FileExistsError, myerror.dir_error)
 
 			file_time = 0.0
-			start = time.time()
+			start = time.time()			
 			
 			with iolib.fopen(fp.path, 'rd') as f:
 				remain = fp.size
 				file_time = 0.0
 				start = 0.0
-				elapsed = 0.0
+				elapsed = 0.0				
 				
 				while (remain != 0):
 					chunk_sectors = min(remain, self.max_buff_size)									
-					expected = self.__make_chunk_pattern(chunk_sectors)					
+					expected = self.__random_chunk_pattern(chunk_sectors, fp.rand_seed)					
+					#expected = self.__next_chunk_pattern(chunk_sectors)	
 
 					if (self.__check_terminated()):
 						return;
@@ -224,15 +207,58 @@ class fio_test(object):
 					if (real != expected):
 						if (self.__check_terminated()):
 							return;
-						raise(Exception("compare error at the file:" + fp.path))					
+						raise_exception(BaseException, myerror.pattern_error, "compare error at the file:" + fp.path)
 																				   
 					self.readed_sectors += int(bytesRead / 512)
 					remain = remain - chunk_sectors
 				
-				self.read_elapsed += file_time
-		
-				time.sleep(0.001)					
+				self.read_elapsed += file_time		
+				time.sleep(0.001)		
+
+			self.__ipc_send_progress(prog, self.filematrix.get_progress())
+
+
+	def write_all(self, prog:progress=None):
+		""" write both static and dynamic files """
+		self.__output_status("Write all files")
+		self.__write_files('all', prog)
+
+	def write_dynamic(self, prog:progress=None):
+		""" write only dynamic files """
+		self.__output_status("Write DYNAMIC files")
+		self.__write_files('dynamic', prog)
+
+	def read_all(self, prog:progress=None):
+		""" read and compare both static and dynamic files """			
+		self.__output_status("Read & compare all files")
+		self.__read_files('all', prog)
+
+	def read_dynamic(self, prog:progress=None):
+		""" read and compare only DYNAMIC files """			
+		self.__output_status("Read & compare DYNAMIC files")
+		self.__read_files('dynamic', prog)		
 						
+	def delete_all(self, prog:progress=None):
+		""" delete all files in the root path """ 
+		self.__output_status('Delete all files')
+		if (self.__check_terminated()):
+			return;	
+		delete_dir(self.root)
+		time.sleep(0.3)		
+
+	def delete_dynamic(self, prog:progress=None):
+		self.__output_status('Delete DYNAMIC files')
+		if (self.__check_terminated()):
+			return;	
+		self.reset()
+
+		for fs in self.filematrix.filesets:
+			if (self.__check_terminated()):
+				return;	
+			if (fs.mode is fsmode.dynamic):
+				delete_dir(fs.path)
+				os.rmdir(fs.path)
+
 	def get_last_write_perf(self):
 		if (self.write_elapsed == 0):
 			return 0

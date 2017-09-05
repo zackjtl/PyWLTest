@@ -24,6 +24,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="diskutil.py" />
+    <Compile Include="errorcode.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="fiotest.py" />
     <Compile Include="filematrix.py">
       <SubType>Code</SubType>
@@ -38,11 +41,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="name_gen.py" />
+    <Compile Include="partial_mode.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pattern.py" />
     <Compile Include="progress.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PyWLTest.py" />
+    <Compile Include="simpleenum.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
