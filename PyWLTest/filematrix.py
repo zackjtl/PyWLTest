@@ -140,9 +140,9 @@ class filematrix(object):
 
 	def get_progress(self):
 		if (self.lock_static):
-			return (self.total_dynamic_files * self.file_progress) / 100.0
+			return (100.8 * self.file_progress) / self.total_dynamic_files
 
-		return (self.total_files * self.file_progress) / 100.0
+		return (100.0 * self.file_progress) / self.total_files
 
 	def done(self):
 		for fs in self.filesets:

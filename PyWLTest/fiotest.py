@@ -5,8 +5,8 @@ import pattern
 import time
 import iolib
 
-import win32pipe, win32file
-import win32file
+#import win32pipe, win32file
+#import win32file
 
 import socket
 import IPC

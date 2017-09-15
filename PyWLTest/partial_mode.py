@@ -74,9 +74,12 @@ def execute(drive:str, minFile, maxFile, fixedPercent, partialSize, loops:int, r
 	tester.delete_dynamic()
 
 	for i in range(loops):
-		tester.write_dynamic()
-		tester.read_dynamic()
+		tester.write_dynamic(sub_progress(prog, 0, 50))
+		tester.read_dynamic(sub_progress(prog, 50, 50))
 		tester.delete_dynamic()
 
 		print('write performance: {} MB/s'.format(tester.get_last_write_perf()))
 		print('read performance: {} MB/s'.format(tester.get_last_read_perf()))
+
+		if (ipc.terminated):
+			break

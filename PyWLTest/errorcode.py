@@ -1,5 +1,3 @@
-#-*-coding:utf-8-*-
-
 from simpleenum import make_enum
 import enum
 

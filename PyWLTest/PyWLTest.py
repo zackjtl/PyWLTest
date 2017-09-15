@@ -8,7 +8,7 @@ import fiotest
 import partial_mode
 
 #開啟fiotest模組的debug info
-fiotest.debug_info_en()
+##fiotest.debug_info_en()
 
 ipc = IPC.IPC()
 

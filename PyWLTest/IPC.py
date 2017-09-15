@@ -102,7 +102,8 @@ class IPC(object):
 
 	def send_sub_progress(self, prog:progress.progress):
 		self.conn.setblocking(True)		
-		pos = prog.compute_position(prog.get_position())
+		#pos = prog.compute_position(prog.get_position())
+		pos = prog.get_position()
 		p = progress_payload(0x55aa, PayloadType.sub_progress.value, pos)
 		
 		buff = bytes(ctypes.sizeof(p))
