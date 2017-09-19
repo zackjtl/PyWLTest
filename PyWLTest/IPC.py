@@ -37,6 +37,7 @@ class IPC(object):
 		self.terminated = False
 		self.check_thread = None
 		self.connected = False
+		self.prev_prog = 0
 		
 	def create_server_socket(self):
 		""" initial socket and wait connection """
@@ -103,13 +104,13 @@ class IPC(object):
 	def send_sub_progress(self, prog:progress.progress):
 		self.conn.setblocking(True)		
 		#pos = prog.compute_position(prog.get_position())
-		pos = prog.get_position()
+		pos = prog.get_position()		
 		p = progress_payload(0x55aa, PayloadType.sub_progress.value, pos)
 		
 		buff = bytes(ctypes.sizeof(p))
 		ctypes.memmove(buff, ctypes.byref(p), ctypes.sizeof(p))
 
-		self.conn.sendall(buff)
+		self.conn.sendall(buff)					
 
 	def send_total_progress(self, prog:progress.progress):
 		self.conn.setblocking(True)		

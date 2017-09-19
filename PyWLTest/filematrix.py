@@ -39,12 +39,10 @@ class filematrix(object):
 		self.reset()		
 	
 	def reset(self, lock_static:bool=None): 		
-		self.stack = []
 		self.rand = random.Random(self.seed)   
 		for i,fs in enumerate(self.filesets):
 			fs.reset()
 		self.reset_iter()
-		self.done_counter = 0
 		self.lock_static = lock_static
 
 		#default is not set

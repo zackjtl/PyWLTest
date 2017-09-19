@@ -1,11 +1,9 @@
 import sys
-import os
-import random
 import traceback
 import IPC
-import fiotest
 
 import partial_mode
+import seq_mode
 
 #開啟fiotest模組的debug info
 ##fiotest.debug_info_en()
@@ -23,7 +21,8 @@ def dotest():
 
 	try:
 		create_communication(ipc)
-		partial_mode.execute('K', 0.5, 2, 10, 50, 3000, 0x12345678, ipc)
+		#partial_mode.execute('D', 0.5, 2, 10, 50, 3000, 0x12345678, ipc)
+		seq_mode.execute('D', 8, 8, 1, 3000, 0x12345678, ipc)
 
 	except BaseException as err:
 		print("------------- error message ------------")

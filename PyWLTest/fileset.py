@@ -104,7 +104,7 @@ class fileset(object):
 		self.current_sectors += size		
 		self.current_filenumber += 1
 		fp = file_parameter(self.current_folder, name, size, self.rand.randint(0, 0xffffffff))
-		
+
 		return fp
 		
 	def __count_through_files(self):

@@ -4,6 +4,7 @@ import os
 import pattern
 import time
 import iolib
+import osinfo
 
 #import win32pipe, win32file
 #import win32file
@@ -35,7 +36,10 @@ class fio_test(object):
 		self.read_elapsed = 0.0		
 		self.written_sectors = 0
 		self.readed_sectors = 0
-		self.randlib = WinDLL(thisdir + '\\random.dll')
+		self.randlib = WinDLL(osinfo.libdir + '\\random.dll')
+		self.prev_mode=None
+		self.prev_progress = 0
+				
 		self.terminated = False				
 		self.__prepair_patterns()
 		self.IPC = IPC
@@ -65,8 +69,10 @@ class fio_test(object):
 
 	def __ipc_send_progress(self, prog:progress, position):
 		if ((self.IPC != None) and (self.IPC.connected) and (prog != None)):
-			prog.set_position(position)
-			self.IPC.send_sub_progress(prog)
+			if (abs(int(position) - self.prev_progress) >= 3):
+				prog.set_position(position)
+				self.IPC.send_sub_progress(prog)
+				self.prev_progress = int(position)
 
 	def __prepair_patterns(self):
 		""" Create an amount of bytearray of test patterns, these is a ring to make contents of the test files.
@@ -102,10 +108,8 @@ class fio_test(object):
 	def __write_files(self, kind:str, prog:progress=None):
 		""" [private method] the real write function """
 		self.written_sectors = 0
-		self.write_elapsed = 0.0		
-		
-		self.filematrix.reset(kind == 'dynamic')
-	
+		self.write_elapsed = 0.0				
+		self.filematrix.reset(kind == 'dynamic')	
 		self.__ipc_send_progress(prog, 0)
 
 		while not self.filematrix.done():		
@@ -115,12 +119,15 @@ class fio_test(object):
 			fp = self.filematrix.next()
 
 			if (kind == 'all'):
-				if (self.filematrix.current.mode == fsmode.dynamic):
-					self.__ipc_send_status("Write all files - DYNAMIC")	
-				else:
-					self.__ipc_send_status("Write all files - STATIC")							
+				if (self.prev_mode != self.filematrix.current.mode):
+					if (self.filematrix.current.mode == fsmode.dynamic):
+						self.__ipc_send_status("Write all files - DYNAMIC")	
+					else:
+						self.__ipc_send_status("Write all files - STATIC")	
 
-			logging.info('write path:' + fp.path + ', size: ' + str(fp.size) + ', seed: ' + str(fp.rand_seed))
+					self.prev_mode = self.filematrix.current.mode 						
+
+			####logging.info('write path:' + fp.path + ', size: ' + str(fp.size) + ', seed: ' + str(fp.rand_seed))
 
 			if not os.path.exists(fp.folder):
 				try:
@@ -128,18 +135,17 @@ class fio_test(object):
 				except:
 					 raise_error(FileNotFoundError, myerror.dir_error, "create directory fail")
 			elif not os.access(fp.folder, os.F_OK):
-
 				os.mkdir(fp.folder)	
 				
 			time.sleep(0.001)				
 				
-			try:							
-				with iolib.fopen(fp.path, 'wb') as f:
-					pass				
-			except (PermissionError) as err:			
-				raise_error(PermissionError, myerror.dir_error, str(err))
+			#try:							
+			#	with iolib.fopen(fp.path, 'wb') as f:
+			#		pass				
+			#except (PermissionError) as err:			
+			#	raise_error(PermissionError, myerror.dir_error, str(err))
 											 
-			with iolib.fopen(fp.path, 'ab') as f:
+			with iolib.fopen(fp.path, 'wb') as f:
 				remain = fp.size
 				file_time = 0.0
 				start = 0.0
@@ -179,7 +185,7 @@ class fio_test(object):
 						
 			fp = self.filematrix.next()	
 
-			logging.info('read path:' + fp.path + ', size: ' + str(fp.size) + ', seed: ' + str(fp.rand_seed))
+			####logging.info('read path:' + fp.path + ', size: ' + str(fp.size) + ', seed: ' + str(fp.rand_seed))
 			
 			if not os.path.exists(fp.folder):
 				raise_error(FileExistsError, myerror.dir_error)

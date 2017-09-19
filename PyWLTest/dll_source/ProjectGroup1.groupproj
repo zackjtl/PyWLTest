@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{441BDD68-0554-4FC5-A9BE-2CCA7EC7156B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="randomdll\random.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="io_dll\io.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="random">
+        <MSBuild Projects="randomdll\random.cbproj"/>
+    </Target>
+    <Target Name="random:Clean">
+        <MSBuild Projects="randomdll\random.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="random:Make">
+        <MSBuild Projects="randomdll\random.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="io">
+        <MSBuild Projects="io_dll\io.cbproj"/>
+    </Target>
+    <Target Name="io:Clean">
+        <MSBuild Projects="io_dll\io.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="io:Make">
+        <MSBuild Projects="io_dll\io.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="random;io"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="random:Clean;io:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="random:Make;io:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

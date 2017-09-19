@@ -1,0 +1,1207 @@
+﻿
+2017-09-15T11:24:45: Start analysis
+2017-09-15T11:24:46: [WARNING] Library was set explicitly - skipping path detection
+2017-09-15T11:24:46: IncludeModulesFromModulePath = win32com
+2017-09-15T11:24:46: Deleting 0 files
+2017-09-15T11:24:46: Scraping builtin modules
+2017-09-15T11:24:46: Command: C:\github\PyWLTest\PyWLTest\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\PythonScraper.py" C:\github\PyWLTest\PyWLTest\env\.ptvs\ "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\\"
+2017-09-15T11:24:47: Output
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_codecs.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_collections.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_functools.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_heapq.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_io.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_locale.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_md5.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_random.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_sha256.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_sha512.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_sre.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_struct.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_warnings.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_weakref.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\array.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\binascii.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\cmath.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\errno.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\gc.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\itertools.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\marshal.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\math.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\mmap.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\msvcrt.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\nt.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\signal.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\sys.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\time.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\xxsubtype.idb
+2017-09-15T11:24:47: Scraped builtin modules
+2017-09-15T11:24:47: astropy.CallDepth = 0
+2017-09-15T11:24:47: matplotlib.CallDepth = 3
+2017-09-15T11:24:47: pandas.CallDepth = 0
+2017-09-15T11:24:47: sympy.CallDepth = 0
+2017-09-15T11:24:47: Start group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages" with 2 files
+2017-09-15T11:24:47: Parsing "easy_install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\easy_install.py")
+2017-09-15T11:24:47: Parsing "pkg_resources" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pkg_resources.py")
+2017-09-15T11:24:47: Parsing complete
+2017-09-15T11:24:47: Analyzing "easy_install"
+2017-09-15T11:24:47: Analyzing "pkg_resources"
+2017-09-15T11:24:47: Starting analysis of 2 modules
+2017-09-15T11:24:49: Analysis complete
+2017-09-15T11:24:49: Saving group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages"
+2017-09-15T11:24:49: End of group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages"
+2017-09-15T11:24:49: Start group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip" with 208 files
+2017-09-15T11:24:49: Parsing "pip.basecommand" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\basecommand.py")
+2017-09-15T11:24:49: Parsing "pip.baseparser" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\baseparser.py")
+2017-09-15T11:24:49: Parsing "pip.cmdoptions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\cmdoptions.py")
+2017-09-15T11:24:49: Parsing "pip.download" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\download.py")
+2017-09-15T11:24:49: Parsing "pip.exceptions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\exceptions.py")
+2017-09-15T11:24:49: Parsing "pip.index" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\index.py")
+2017-09-15T11:24:49: Parsing "pip.locations" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\locations.py")
+2017-09-15T11:24:49: Parsing "pip.log" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\log.py")
+2017-09-15T11:24:49: Parsing "pip.pep425tags" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\pep425tags.py")
+2017-09-15T11:24:49: Parsing "pip.req" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\req.py")
+2017-09-15T11:24:49: Parsing "pip.runner" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\runner.py")
+2017-09-15T11:24:49: Parsing "pip.status_codes" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\status_codes.py")
+2017-09-15T11:24:49: Parsing "pip.util" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\util.py")
+2017-09-15T11:24:49: Parsing "pip.wheel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\wheel.py")
+2017-09-15T11:24:49: Parsing "pip" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\__init__.py")
+2017-09-15T11:24:49: Parsing "pip.__main__" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\__main__.py")
+2017-09-15T11:24:49: Parsing "pip.backwardcompat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\backwardcompat\__init__.py")
+2017-09-15T11:24:49: Parsing "pip.commands.bundle" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\bundle.py")
+2017-09-15T11:24:49: Parsing "pip.commands.completion" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\completion.py")
+2017-09-15T11:24:49: Parsing "pip.commands.freeze" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\freeze.py")
+2017-09-15T11:24:49: Parsing "pip.commands.help" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\help.py")
+2017-09-15T11:24:49: Parsing "pip.commands.install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\install.py")
+2017-09-15T11:24:49: Parsing "pip.commands.list" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\list.py")
+2017-09-15T11:24:49: Parsing "pip.commands.search" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\search.py")
+2017-09-15T11:24:49: Parsing "pip.commands.show" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\show.py")
+2017-09-15T11:24:49: Parsing "pip.commands.uninstall" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\uninstall.py")
+2017-09-15T11:24:49: Parsing "pip.commands.unzip" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\unzip.py")
+2017-09-15T11:24:49: Parsing "pip.commands.wheel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\wheel.py")
+2017-09-15T11:24:49: Parsing "pip.commands.zip" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\zip.py")
+2017-09-15T11:24:49: Parsing "pip.commands" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\__init__.py")
+2017-09-15T11:24:49: Parsing "pip.vcs.bazaar" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\bazaar.py")
+2017-09-15T11:24:49: Parsing "pip.vcs.git" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\git.py")
+2017-09-15T11:24:49: Parsing "pip.vcs.mercurial" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\mercurial.py")
+2017-09-15T11:24:49: Parsing "pip.vcs.subversion" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\subversion.py")
+2017-09-15T11:24:49: Parsing "pip.vcs" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.pkg_resources" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\pkg_resources.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.six" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\six.py")
+2017-09-15T11:24:49: Parsing "pip._vendor" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.colorama.ansi" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\ansi.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.colorama.ansitowin32" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\ansitowin32.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.colorama.initialise" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\initialise.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.colorama.win32" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\win32.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.colorama.winterm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\winterm.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.colorama" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\compat.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.database" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\database.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.index" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\index.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.locators" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\locators.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.manifest" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\manifest.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.markers" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\markers.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.metadata" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\metadata.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.resources" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\resources.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.scripts" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\scripts.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.util" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\util.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.version" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\version.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib.wheel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\wheel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib._backport.misc" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\misc.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib._backport.shutil" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\shutil.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib._backport.sysconfig" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\sysconfig.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib._backport.tarfile" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\tarfile.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.distlib._backport" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.constants" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\constants.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.html5parser" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\html5parser.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.ihatexml" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\ihatexml.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.inputstream" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\inputstream.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.sanitizer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\sanitizer.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.tokenizer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\tokenizer.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.utils" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\utils.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.filters.alphabeticalattributes" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\alphabeticalattributes.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.filters.inject_meta_charset" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\inject_meta_charset.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.filters.lint" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\lint.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.filters.optionaltags" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\optionaltags.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.filters.sanitizer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\sanitizer.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.filters.whitespace" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\whitespace.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.filters._base" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\_base.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.filters" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.serializer.htmlserializer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\serializer\htmlserializer.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.serializer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\serializer\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treebuilders.dom" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\dom.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treebuilders.etree" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\etree.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treebuilders.etree_lxml" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\etree_lxml.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treebuilders._base" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\_base.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treebuilders" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treewalkers.dom" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\dom.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treewalkers.etree" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\etree.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treewalkers.genshistream" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\genshistream.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treewalkers.lxmletree" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\lxmletree.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treewalkers.pulldom" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\pulldom.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treewalkers._base" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\_base.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.treewalkers" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.trie.datrie" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\trie\datrie.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.trie.py" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\trie\py.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.trie._base" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\trie\_base.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.html5lib.trie" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\trie\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.adapters" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\adapters.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.api" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\api.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.auth" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\auth.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.certs" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\certs.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\compat.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.cookies" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\cookies.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.exceptions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\exceptions.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.hooks" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\hooks.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.models" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\models.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.sessions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\sessions.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.status_codes" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\status_codes.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.structures" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\structures.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.utils" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\utils.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.big5freq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\big5freq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.big5prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\big5prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.chardistribution" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\chardistribution.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.charsetgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\charsetgroupprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.charsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\charsetprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.codingstatemachine" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\codingstatemachine.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\compat.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.constants" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\constants.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.cp949prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\cp949prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.escprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\escprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.escsm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\escsm.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.eucjpprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\eucjpprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.euckrfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\euckrfreq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.euckrprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\euckrprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.euctwfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\euctwfreq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.euctwprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\euctwprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.gb2312freq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\gb2312freq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.gb2312prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\gb2312prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.hebrewprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\hebrewprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.jisfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\jisfreq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.jpcntx" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\jpcntx.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.langbulgarianmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langbulgarianmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.langcyrillicmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langcyrillicmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.langgreekmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langgreekmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.langhebrewmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langhebrewmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.langhungarianmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langhungarianmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.langthaimodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langthaimodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.latin1prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\latin1prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.mbcharsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\mbcharsetprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.mbcsgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\mbcsgroupprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.mbcssm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\mbcssm.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.sbcharsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\sbcharsetprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.sbcsgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\sbcsgroupprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.sjisprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\sjisprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.universaldetector" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\universaldetector.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.utf8prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\utf8prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.charade.__main__" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\__main__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.big5freq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\big5freq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.big5prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\big5prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.chardetect" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\chardetect.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.chardistribution" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\chardistribution.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.charsetgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\charsetgroupprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.charsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\charsetprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.codingstatemachine" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\codingstatemachine.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\compat.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.constants" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\constants.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.cp949prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\cp949prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.escprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\escprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.escsm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\escsm.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.eucjpprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\eucjpprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.euckrfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\euckrfreq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.euckrprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\euckrprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.euctwfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\euctwfreq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.euctwprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\euctwprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.gb2312freq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\gb2312freq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.gb2312prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\gb2312prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.hebrewprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\hebrewprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.jisfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\jisfreq.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.jpcntx" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\jpcntx.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.langbulgarianmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langbulgarianmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.langcyrillicmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langcyrillicmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.langgreekmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langgreekmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.langhebrewmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langhebrewmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.langhungarianmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langhungarianmodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.langthaimodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langthaimodel.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.latin1prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\latin1prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.mbcharsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\mbcharsetprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.mbcsgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\mbcsgroupprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.mbcssm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\mbcssm.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.sbcharsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\sbcharsetprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.sbcsgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\sbcsgroupprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.sjisprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\sjisprober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.universaldetector" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\universaldetector.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet.utf8prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\utf8prober.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.chardet" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.connection" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\connection.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.connectionpool" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\connectionpool.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.exceptions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\exceptions.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.fields" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\fields.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.filepost" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\filepost.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.poolmanager" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\poolmanager.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.request" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\request.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.response" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\response.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.util" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\util.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3._collections" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\_collections.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.contrib.ntlmpool" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\contrib\ntlmpool.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.contrib.pyopenssl" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\contrib\pyopenssl.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.contrib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\contrib\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.packages.ordered_dict" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\ordered_dict.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.packages.six" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\six.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.packages" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.packages.ssl_match_hostname._implementation" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\ssl_match_hostname\_implementation.py")
+2017-09-15T11:24:49: Parsing "pip._vendor.requests.packages.urllib3.packages.ssl_match_hostname" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\ssl_match_hostname\__init__.py")
+2017-09-15T11:24:49: Parsing "pip._vendor._markerlib.markers" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\_markerlib\markers.py")
+2017-09-15T11:24:49: Parsing "pip._vendor._markerlib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\_markerlib\__init__.py")
+2017-09-15T11:24:49: Parsing complete
+2017-09-15T11:24:49: Analyzing "pip.basecommand"
+2017-09-15T11:24:49: Analyzing "pip.baseparser"
+2017-09-15T11:24:49: Analyzing "pip.cmdoptions"
+2017-09-15T11:24:49: Analyzing "pip.download"
+2017-09-15T11:24:49: Analyzing "pip.exceptions"
+2017-09-15T11:24:49: Analyzing "pip.index"
+2017-09-15T11:24:49: Analyzing "pip.locations"
+2017-09-15T11:24:49: Analyzing "pip.log"
+2017-09-15T11:24:49: Analyzing "pip.pep425tags"
+2017-09-15T11:24:49: Analyzing "pip.req"
+2017-09-15T11:24:49: Analyzing "pip.runner"
+2017-09-15T11:24:49: Analyzing "pip.status_codes"
+2017-09-15T11:24:49: Analyzing "pip.util"
+2017-09-15T11:24:49: Analyzing "pip.wheel"
+2017-09-15T11:24:49: Analyzing "pip"
+2017-09-15T11:24:49: Analyzing "pip.__main__"
+2017-09-15T11:24:49: Analyzing "pip.backwardcompat"
+2017-09-15T11:24:49: Analyzing "pip.commands.bundle"
+2017-09-15T11:24:49: Analyzing "pip.commands.completion"
+2017-09-15T11:24:49: Analyzing "pip.commands.freeze"
+2017-09-15T11:24:49: Analyzing "pip.commands.help"
+2017-09-15T11:24:49: Analyzing "pip.commands.install"
+2017-09-15T11:24:49: Analyzing "pip.commands.list"
+2017-09-15T11:24:49: Analyzing "pip.commands.search"
+2017-09-15T11:24:49: Analyzing "pip.commands.show"
+2017-09-15T11:24:49: Analyzing "pip.commands.uninstall"
+2017-09-15T11:24:49: Analyzing "pip.commands.unzip"
+2017-09-15T11:24:49: Analyzing "pip.commands.wheel"
+2017-09-15T11:24:49: Analyzing "pip.commands.zip"
+2017-09-15T11:24:49: Analyzing "pip.commands"
+2017-09-15T11:24:49: Analyzing "pip.vcs.bazaar"
+2017-09-15T11:24:49: Analyzing "pip.vcs.git"
+2017-09-15T11:24:49: Analyzing "pip.vcs.mercurial"
+2017-09-15T11:24:49: Analyzing "pip.vcs.subversion"
+2017-09-15T11:24:49: Analyzing "pip.vcs"
+2017-09-15T11:24:49: Analyzing "pip._vendor.pkg_resources"
+2017-09-15T11:24:49: Analyzing "pip._vendor.six"
+2017-09-15T11:24:49: Analyzing "pip._vendor"
+2017-09-15T11:24:49: Analyzing "pip._vendor.colorama.ansi"
+2017-09-15T11:24:49: Analyzing "pip._vendor.colorama.ansitowin32"
+2017-09-15T11:24:49: Analyzing "pip._vendor.colorama.initialise"
+2017-09-15T11:24:49: Analyzing "pip._vendor.colorama.win32"
+2017-09-15T11:24:49: Analyzing "pip._vendor.colorama.winterm"
+2017-09-15T11:24:49: Analyzing "pip._vendor.colorama"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.compat"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.database"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.index"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.locators"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.manifest"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.markers"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.metadata"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.resources"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.scripts"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.util"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.version"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib.wheel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib._backport.misc"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib._backport.shutil"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib._backport.sysconfig"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib._backport.tarfile"
+2017-09-15T11:24:49: Analyzing "pip._vendor.distlib._backport"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.constants"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.html5parser"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.ihatexml"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.inputstream"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.sanitizer"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.tokenizer"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.utils"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.filters.alphabeticalattributes"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.filters.inject_meta_charset"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.filters.lint"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.filters.optionaltags"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.filters.sanitizer"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.filters.whitespace"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.filters._base"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.filters"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.serializer.htmlserializer"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.serializer"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treebuilders.dom"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treebuilders.etree"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treebuilders.etree_lxml"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treebuilders._base"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treebuilders"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treewalkers.dom"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treewalkers.etree"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treewalkers.genshistream"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treewalkers.lxmletree"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treewalkers.pulldom"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treewalkers._base"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.treewalkers"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.trie.datrie"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.trie.py"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.trie._base"
+2017-09-15T11:24:49: Analyzing "pip._vendor.html5lib.trie"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.adapters"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.api"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.auth"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.certs"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.compat"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.cookies"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.exceptions"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.hooks"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.models"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.sessions"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.status_codes"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.structures"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.utils"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.big5freq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.big5prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.chardistribution"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.charsetgroupprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.charsetprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.codingstatemachine"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.compat"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.constants"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.cp949prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.escprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.escsm"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.eucjpprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.euckrfreq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.euckrprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.euctwfreq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.euctwprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.gb2312freq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.gb2312prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.hebrewprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.jisfreq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.jpcntx"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.langbulgarianmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.langcyrillicmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.langgreekmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.langhebrewmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.langhungarianmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.langthaimodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.latin1prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.mbcharsetprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.mbcsgroupprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.mbcssm"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.sbcharsetprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.sbcsgroupprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.sjisprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.universaldetector"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.utf8prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.charade.__main__"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.big5freq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.big5prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.chardetect"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.chardistribution"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.charsetgroupprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.charsetprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.codingstatemachine"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.compat"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.constants"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.cp949prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.escprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.escsm"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.eucjpprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.euckrfreq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.euckrprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.euctwfreq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.euctwprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.gb2312freq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.gb2312prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.hebrewprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.jisfreq"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.jpcntx"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.langbulgarianmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.langcyrillicmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.langgreekmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.langhebrewmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.langhungarianmodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.langthaimodel"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.latin1prober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.mbcharsetprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.mbcsgroupprober"
+2017-09-15T11:24:49: Analyzing "pip._vendor.requests.packages.chardet.mbcssm"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.chardet.sbcharsetprober"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.chardet.sbcsgroupprober"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.chardet.sjisprober"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.chardet.universaldetector"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.chardet.utf8prober"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.chardet"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.connection"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.connectionpool"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.exceptions"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.fields"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.filepost"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.poolmanager"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.request"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.response"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.util"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3._collections"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.contrib.ntlmpool"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.contrib.pyopenssl"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.contrib"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.packages.ordered_dict"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.packages.six"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.packages"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.packages.ssl_match_hostname._implementation"
+2017-09-15T11:24:50: Analyzing "pip._vendor.requests.packages.urllib3.packages.ssl_match_hostname"
+2017-09-15T11:24:50: Analyzing "pip._vendor._markerlib.markers"
+2017-09-15T11:24:50: Analyzing "pip._vendor._markerlib"
+2017-09-15T11:24:50: Starting analysis of 208 modules
+2017-09-15T11:24:54: Analysis complete
+2017-09-15T11:24:54: Saving group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip"
+2017-09-15T11:24:56: End of group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip"
+2017-09-15T11:24:56: Start group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools" with 55 files
+2017-09-15T11:24:56: Parsing "setuptools.archive_util" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\archive_util.py")
+2017-09-15T11:24:56: Parsing "setuptools.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\compat.py")
+2017-09-15T11:24:56: Parsing "setuptools.depends" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\depends.py")
+2017-09-15T11:24:56: Parsing "setuptools.dist" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\dist.py")
+2017-09-15T11:24:56: Parsing "setuptools.extension" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\extension.py")
+2017-09-15T11:24:56: Parsing "setuptools.lib2to3_ex" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\lib2to3_ex.py")
+2017-09-15T11:24:56: Parsing "setuptools.package_index" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\package_index.py")
+2017-09-15T11:24:56: Parsing "setuptools.py26compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\py26compat.py")
+2017-09-15T11:24:56: Parsing "setuptools.py27compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\py27compat.py")
+2017-09-15T11:24:56: Parsing "setuptools.py31compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\py31compat.py")
+2017-09-15T11:24:56: Parsing "setuptools.sandbox" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\sandbox.py")
+2017-09-15T11:24:56: Parsing "setuptools.ssl_support" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\ssl_support.py")
+2017-09-15T11:24:56: Parsing "setuptools.svn_utils" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\svn_utils.py")
+2017-09-15T11:24:56: Parsing "setuptools.version" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\version.py")
+2017-09-15T11:24:56: Parsing "setuptools" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\__init__.py")
+2017-09-15T11:24:56: Parsing "setuptools.command.alias" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\alias.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.bdist_egg" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\bdist_egg.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.bdist_rpm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\bdist_rpm.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.bdist_wininst" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\bdist_wininst.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.build_ext" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\build_ext.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.build_py" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\build_py.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.develop" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\develop.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.easy_install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\easy_install.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.egg_info" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\egg_info.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\install.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.install_egg_info" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\install_egg_info.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.install_lib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\install_lib.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.install_scripts" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\install_scripts.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.register" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\register.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.rotate" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\rotate.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.saveopts" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\saveopts.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.sdist" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\sdist.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.setopt" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\setopt.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.test" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\test.py")
+2017-09-15T11:24:57: Parsing "setuptools.command.upload_docs" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\upload_docs.py")
+2017-09-15T11:24:57: Parsing "setuptools.command" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\__init__.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.doctest" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\doctest.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.environment" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\environment.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.py26compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\py26compat.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.server" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\server.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_bdist_egg" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_bdist_egg.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_build_ext" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_build_ext.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_develop" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_develop.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_dist_info" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_dist_info.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_easy_install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_easy_install.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_egg_info" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_egg_info.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_markerlib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_markerlib.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_packageindex" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_packageindex.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_resources" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_resources.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_sandbox" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_sandbox.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_sdist" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_sdist.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_svn" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_svn.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_test" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_test.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests.test_upload_docs" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_upload_docs.py")
+2017-09-15T11:24:57: Parsing "setuptools.tests" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\__init__.py")
+2017-09-15T11:24:57: Parsing complete
+2017-09-15T11:24:57: Analyzing "setuptools.archive_util"
+2017-09-15T11:24:57: Analyzing "setuptools.compat"
+2017-09-15T11:24:57: Analyzing "setuptools.depends"
+2017-09-15T11:24:57: Analyzing "setuptools.dist"
+2017-09-15T11:24:57: Analyzing "setuptools.extension"
+2017-09-15T11:24:57: Analyzing "setuptools.lib2to3_ex"
+2017-09-15T11:24:57: Analyzing "setuptools.package_index"
+2017-09-15T11:24:57: Analyzing "setuptools.py26compat"
+2017-09-15T11:24:57: Analyzing "setuptools.py27compat"
+2017-09-15T11:24:57: Analyzing "setuptools.py31compat"
+2017-09-15T11:24:57: Analyzing "setuptools.sandbox"
+2017-09-15T11:24:57: Analyzing "setuptools.ssl_support"
+2017-09-15T11:24:57: Analyzing "setuptools.svn_utils"
+2017-09-15T11:24:57: Analyzing "setuptools.version"
+2017-09-15T11:24:57: Analyzing "setuptools"
+2017-09-15T11:24:57: Analyzing "setuptools.command.alias"
+2017-09-15T11:24:57: Analyzing "setuptools.command.bdist_egg"
+2017-09-15T11:24:57: Analyzing "setuptools.command.bdist_rpm"
+2017-09-15T11:24:57: Analyzing "setuptools.command.bdist_wininst"
+2017-09-15T11:24:57: Analyzing "setuptools.command.build_ext"
+2017-09-15T11:24:57: Analyzing "setuptools.command.build_py"
+2017-09-15T11:24:57: Analyzing "setuptools.command.develop"
+2017-09-15T11:24:57: Analyzing "setuptools.command.easy_install"
+2017-09-15T11:24:57: Analyzing "setuptools.command.egg_info"
+2017-09-15T11:24:57: Analyzing "setuptools.command.install"
+2017-09-15T11:24:57: Analyzing "setuptools.command.install_egg_info"
+2017-09-15T11:24:57: Analyzing "setuptools.command.install_lib"
+2017-09-15T11:24:57: Analyzing "setuptools.command.install_scripts"
+2017-09-15T11:24:57: Analyzing "setuptools.command.register"
+2017-09-15T11:24:57: Analyzing "setuptools.command.rotate"
+2017-09-15T11:24:57: Analyzing "setuptools.command.saveopts"
+2017-09-15T11:24:57: Analyzing "setuptools.command.sdist"
+2017-09-15T11:24:57: Analyzing "setuptools.command.setopt"
+2017-09-15T11:24:57: Analyzing "setuptools.command.test"
+2017-09-15T11:24:57: Analyzing "setuptools.command.upload_docs"
+2017-09-15T11:24:57: Analyzing "setuptools.command"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.doctest"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.environment"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.py26compat"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.server"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_bdist_egg"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_build_ext"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_develop"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_dist_info"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_easy_install"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_egg_info"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_markerlib"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_packageindex"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_resources"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_sandbox"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_sdist"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_svn"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_test"
+2017-09-15T11:24:57: Analyzing "setuptools.tests.test_upload_docs"
+2017-09-15T11:24:57: Analyzing "setuptools.tests"
+2017-09-15T11:24:57: Starting analysis of 55 modules
+2017-09-15T11:24:59: Analysis complete
+2017-09-15T11:24:59: Saving group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools"
+2017-09-15T11:24:59: End of group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools"
+2017-09-15T11:24:59: Start group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib" with 2 files
+2017-09-15T11:24:59: Parsing "_markerlib.markers" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib\markers.py")
+2017-09-15T11:24:59: Parsing "_markerlib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib\__init__.py")
+2017-09-15T11:24:59: Parsing complete
+2017-09-15T11:24:59: Analyzing "_markerlib.markers"
+2017-09-15T11:24:59: Analyzing "_markerlib"
+2017-09-15T11:24:59: Starting analysis of 2 modules
+2017-09-15T11:25:01: Analysis complete
+2017-09-15T11:25:01: Saving group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib"
+2017-09-15T11:25:01: End of group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib"
+2017-09-15T11:25:01: Deleting 0 files
+
+2017-09-18T11:07:54: Start analysis
+2017-09-18T11:07:54: [WARNING] Library was set explicitly - skipping path detection
+2017-09-18T11:07:54: IncludeModulesFromModulePath = win32com
+2017-09-18T11:07:54: Deleting 328 files
+2017-09-18T11:07:55: Scraping builtin modules
+2017-09-18T11:07:55: Command: C:\github\PyWLTest\PyWLTest\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\PythonScraper.py" C:\github\PyWLTest\PyWLTest\env\.ptvs\ "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\\"
+2017-09-18T11:07:58: Output
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_codecs.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_collections.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_functools.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_heapq.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_io.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_locale.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_md5.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_random.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_sha256.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_sha512.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_sre.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_struct.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_warnings.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\_weakref.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\array.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\binascii.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\cmath.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\errno.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\gc.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\itertools.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\marshal.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\math.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\mmap.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\msvcrt.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\nt.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\signal.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\sys.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\time.idb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\xxsubtype.idb
+2017-09-18T11:07:58: Scraped builtin modules
+2017-09-18T11:07:58: astropy.CallDepth = 0
+2017-09-18T11:07:58: matplotlib.CallDepth = 3
+2017-09-18T11:07:58: pandas.CallDepth = 0
+2017-09-18T11:07:58: sympy.CallDepth = 0
+2017-09-18T11:07:58: Start group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages" with 2 files
+2017-09-18T11:07:58: Parsing "easy_install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\easy_install.py")
+2017-09-18T11:07:58: Parsing "pkg_resources" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pkg_resources.py")
+2017-09-18T11:07:58: Parsing complete
+2017-09-18T11:07:58: Analyzing "easy_install"
+2017-09-18T11:07:58: Analyzing "pkg_resources"
+2017-09-18T11:07:58: Starting analysis of 2 modules
+2017-09-18T11:08:00: Analysis complete
+2017-09-18T11:08:00: Saving group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages"
+2017-09-18T11:08:01: End of group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages"
+2017-09-18T11:08:01: Start group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip" with 208 files
+2017-09-18T11:08:01: Parsing "pip.basecommand" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\basecommand.py")
+2017-09-18T11:08:01: Parsing "pip.baseparser" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\baseparser.py")
+2017-09-18T11:08:01: Parsing "pip.cmdoptions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\cmdoptions.py")
+2017-09-18T11:08:01: Parsing "pip.download" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\download.py")
+2017-09-18T11:08:01: Parsing "pip.exceptions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\exceptions.py")
+2017-09-18T11:08:01: Parsing "pip.index" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\index.py")
+2017-09-18T11:08:01: Parsing "pip.locations" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\locations.py")
+2017-09-18T11:08:01: Parsing "pip.log" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\log.py")
+2017-09-18T11:08:01: Parsing "pip.pep425tags" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\pep425tags.py")
+2017-09-18T11:08:01: Parsing "pip.req" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\req.py")
+2017-09-18T11:08:01: Parsing "pip.runner" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\runner.py")
+2017-09-18T11:08:01: Parsing "pip.status_codes" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\status_codes.py")
+2017-09-18T11:08:01: Parsing "pip.util" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\util.py")
+2017-09-18T11:08:01: Parsing "pip.wheel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\wheel.py")
+2017-09-18T11:08:01: Parsing "pip" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\__init__.py")
+2017-09-18T11:08:01: Parsing "pip.__main__" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\__main__.py")
+2017-09-18T11:08:01: Parsing "pip.backwardcompat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\backwardcompat\__init__.py")
+2017-09-18T11:08:01: Parsing "pip.commands.bundle" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\bundle.py")
+2017-09-18T11:08:01: Parsing "pip.commands.completion" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\completion.py")
+2017-09-18T11:08:01: Parsing "pip.commands.freeze" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\freeze.py")
+2017-09-18T11:08:01: Parsing "pip.commands.help" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\help.py")
+2017-09-18T11:08:01: Parsing "pip.commands.install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\install.py")
+2017-09-18T11:08:01: Parsing "pip.commands.list" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\list.py")
+2017-09-18T11:08:01: Parsing "pip.commands.search" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\search.py")
+2017-09-18T11:08:01: Parsing "pip.commands.show" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\show.py")
+2017-09-18T11:08:01: Parsing "pip.commands.uninstall" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\uninstall.py")
+2017-09-18T11:08:01: Parsing "pip.commands.unzip" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\unzip.py")
+2017-09-18T11:08:01: Parsing "pip.commands.wheel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\wheel.py")
+2017-09-18T11:08:01: Parsing "pip.commands.zip" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\zip.py")
+2017-09-18T11:08:01: Parsing "pip.commands" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\commands\__init__.py")
+2017-09-18T11:08:01: Parsing "pip.vcs.bazaar" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\bazaar.py")
+2017-09-18T11:08:01: Parsing "pip.vcs.git" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\git.py")
+2017-09-18T11:08:01: Parsing "pip.vcs.mercurial" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\mercurial.py")
+2017-09-18T11:08:01: Parsing "pip.vcs.subversion" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\subversion.py")
+2017-09-18T11:08:01: Parsing "pip.vcs" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\vcs\__init__.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.pkg_resources" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\pkg_resources.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.six" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\six.py")
+2017-09-18T11:08:01: Parsing "pip._vendor" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\__init__.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.colorama.ansi" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\ansi.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.colorama.ansitowin32" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\ansitowin32.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.colorama.initialise" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\initialise.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.colorama.win32" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\win32.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.colorama.winterm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\winterm.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.colorama" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\colorama\__init__.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\compat.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.database" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\database.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.index" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\index.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.locators" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\locators.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.manifest" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\manifest.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.markers" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\markers.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.metadata" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\metadata.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.resources" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\resources.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.scripts" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\scripts.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.util" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\util.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.version" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\version.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib.wheel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\wheel.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\__init__.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib._backport.misc" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\misc.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib._backport.shutil" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\shutil.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib._backport.sysconfig" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\sysconfig.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib._backport.tarfile" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\tarfile.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.distlib._backport" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\distlib\_backport\__init__.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.html5lib.constants" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\constants.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.html5lib.html5parser" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\html5parser.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.html5lib.ihatexml" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\ihatexml.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.html5lib.inputstream" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\inputstream.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.html5lib.sanitizer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\sanitizer.py")
+2017-09-18T11:08:01: Parsing "pip._vendor.html5lib.tokenizer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\tokenizer.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.utils" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\utils.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.filters.alphabeticalattributes" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\alphabeticalattributes.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.filters.inject_meta_charset" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\inject_meta_charset.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.filters.lint" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\lint.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.filters.optionaltags" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\optionaltags.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.filters.sanitizer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\sanitizer.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.filters.whitespace" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\whitespace.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.filters._base" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\_base.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.filters" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\filters\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.serializer.htmlserializer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\serializer\htmlserializer.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.serializer" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\serializer\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treebuilders.dom" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\dom.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treebuilders.etree" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\etree.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treebuilders.etree_lxml" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\etree_lxml.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treebuilders._base" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\_base.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treebuilders" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treebuilders\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treewalkers.dom" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\dom.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treewalkers.etree" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\etree.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treewalkers.genshistream" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\genshistream.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treewalkers.lxmletree" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\lxmletree.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treewalkers.pulldom" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\pulldom.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treewalkers._base" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\_base.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.treewalkers" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\treewalkers\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.trie.datrie" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\trie\datrie.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.trie.py" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\trie\py.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.trie._base" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\trie\_base.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.html5lib.trie" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\html5lib\trie\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.adapters" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\adapters.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.api" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\api.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.auth" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\auth.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.certs" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\certs.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\compat.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.cookies" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\cookies.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.exceptions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\exceptions.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.hooks" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\hooks.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.models" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\models.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.sessions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\sessions.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.status_codes" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\status_codes.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.structures" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\structures.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.utils" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\utils.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.big5freq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\big5freq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.big5prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\big5prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.chardistribution" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\chardistribution.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.charsetgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\charsetgroupprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.charsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\charsetprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.codingstatemachine" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\codingstatemachine.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\compat.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.constants" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\constants.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.cp949prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\cp949prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.escprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\escprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.escsm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\escsm.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.eucjpprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\eucjpprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.euckrfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\euckrfreq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.euckrprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\euckrprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.euctwfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\euctwfreq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.euctwprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\euctwprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.gb2312freq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\gb2312freq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.gb2312prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\gb2312prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.hebrewprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\hebrewprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.jisfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\jisfreq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.jpcntx" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\jpcntx.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.langbulgarianmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langbulgarianmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.langcyrillicmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langcyrillicmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.langgreekmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langgreekmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.langhebrewmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langhebrewmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.langhungarianmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langhungarianmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.langthaimodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\langthaimodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.latin1prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\latin1prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.mbcharsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\mbcharsetprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.mbcsgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\mbcsgroupprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.mbcssm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\mbcssm.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.sbcharsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\sbcharsetprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.sbcsgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\sbcsgroupprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.sjisprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\sjisprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.universaldetector" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\universaldetector.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.utf8prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\utf8prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.charade.__main__" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\charade\__main__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.big5freq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\big5freq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.big5prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\big5prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.chardetect" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\chardetect.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.chardistribution" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\chardistribution.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.charsetgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\charsetgroupprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.charsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\charsetprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.codingstatemachine" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\codingstatemachine.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\compat.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.constants" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\constants.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.cp949prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\cp949prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.escprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\escprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.escsm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\escsm.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.eucjpprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\eucjpprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.euckrfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\euckrfreq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.euckrprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\euckrprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.euctwfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\euctwfreq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.euctwprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\euctwprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.gb2312freq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\gb2312freq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.gb2312prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\gb2312prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.hebrewprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\hebrewprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.jisfreq" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\jisfreq.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.jpcntx" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\jpcntx.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.langbulgarianmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langbulgarianmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.langcyrillicmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langcyrillicmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.langgreekmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langgreekmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.langhebrewmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langhebrewmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.langhungarianmodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langhungarianmodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.langthaimodel" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\langthaimodel.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.latin1prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\latin1prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.mbcharsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\mbcharsetprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.mbcsgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\mbcsgroupprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.mbcssm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\mbcssm.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.sbcharsetprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\sbcharsetprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.sbcsgroupprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\sbcsgroupprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.sjisprober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\sjisprober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.universaldetector" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\universaldetector.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet.utf8prober" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\utf8prober.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.chardet" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\chardet\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.connection" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\connection.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.connectionpool" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\connectionpool.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.exceptions" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\exceptions.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.fields" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\fields.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.filepost" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\filepost.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.poolmanager" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\poolmanager.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.request" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\request.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.response" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\response.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.util" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\util.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3._collections" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\_collections.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.contrib.ntlmpool" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\contrib\ntlmpool.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.contrib.pyopenssl" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\contrib\pyopenssl.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.contrib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\contrib\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.packages.ordered_dict" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\ordered_dict.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.packages.six" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\six.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.packages" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.packages.ssl_match_hostname._implementation" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\ssl_match_hostname\_implementation.py")
+2017-09-18T11:08:02: Parsing "pip._vendor.requests.packages.urllib3.packages.ssl_match_hostname" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\ssl_match_hostname\__init__.py")
+2017-09-18T11:08:02: Parsing "pip._vendor._markerlib.markers" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\_markerlib\markers.py")
+2017-09-18T11:08:02: Parsing "pip._vendor._markerlib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip\_vendor\_markerlib\__init__.py")
+2017-09-18T11:08:02: Parsing complete
+2017-09-18T11:08:02: Analyzing "pip.basecommand"
+2017-09-18T11:08:02: Analyzing "pip.baseparser"
+2017-09-18T11:08:02: Analyzing "pip.cmdoptions"
+2017-09-18T11:08:02: Analyzing "pip.download"
+2017-09-18T11:08:02: Analyzing "pip.exceptions"
+2017-09-18T11:08:02: Analyzing "pip.index"
+2017-09-18T11:08:02: Analyzing "pip.locations"
+2017-09-18T11:08:02: Analyzing "pip.log"
+2017-09-18T11:08:02: Analyzing "pip.pep425tags"
+2017-09-18T11:08:02: Analyzing "pip.req"
+2017-09-18T11:08:02: Analyzing "pip.runner"
+2017-09-18T11:08:02: Analyzing "pip.status_codes"
+2017-09-18T11:08:02: Analyzing "pip.util"
+2017-09-18T11:08:02: Analyzing "pip.wheel"
+2017-09-18T11:08:02: Analyzing "pip"
+2017-09-18T11:08:03: Analyzing "pip.__main__"
+2017-09-18T11:08:03: Analyzing "pip.backwardcompat"
+2017-09-18T11:08:03: Analyzing "pip.commands.bundle"
+2017-09-18T11:08:03: Analyzing "pip.commands.completion"
+2017-09-18T11:08:03: Analyzing "pip.commands.freeze"
+2017-09-18T11:08:03: Analyzing "pip.commands.help"
+2017-09-18T11:08:03: Analyzing "pip.commands.install"
+2017-09-18T11:08:03: Analyzing "pip.commands.list"
+2017-09-18T11:08:03: Analyzing "pip.commands.search"
+2017-09-18T11:08:03: Analyzing "pip.commands.show"
+2017-09-18T11:08:03: Analyzing "pip.commands.uninstall"
+2017-09-18T11:08:03: Analyzing "pip.commands.unzip"
+2017-09-18T11:08:03: Analyzing "pip.commands.wheel"
+2017-09-18T11:08:03: Analyzing "pip.commands.zip"
+2017-09-18T11:08:03: Analyzing "pip.commands"
+2017-09-18T11:08:03: Analyzing "pip.vcs.bazaar"
+2017-09-18T11:08:03: Analyzing "pip.vcs.git"
+2017-09-18T11:08:03: Analyzing "pip.vcs.mercurial"
+2017-09-18T11:08:03: Analyzing "pip.vcs.subversion"
+2017-09-18T11:08:03: Analyzing "pip.vcs"
+2017-09-18T11:08:03: Analyzing "pip._vendor.pkg_resources"
+2017-09-18T11:08:03: Analyzing "pip._vendor.six"
+2017-09-18T11:08:03: Analyzing "pip._vendor"
+2017-09-18T11:08:03: Analyzing "pip._vendor.colorama.ansi"
+2017-09-18T11:08:03: Analyzing "pip._vendor.colorama.ansitowin32"
+2017-09-18T11:08:03: Analyzing "pip._vendor.colorama.initialise"
+2017-09-18T11:08:03: Analyzing "pip._vendor.colorama.win32"
+2017-09-18T11:08:03: Analyzing "pip._vendor.colorama.winterm"
+2017-09-18T11:08:03: Analyzing "pip._vendor.colorama"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.compat"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.database"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.index"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.locators"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.manifest"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.markers"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.metadata"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.resources"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.scripts"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.util"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.version"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib.wheel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib._backport.misc"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib._backport.shutil"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib._backport.sysconfig"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib._backport.tarfile"
+2017-09-18T11:08:03: Analyzing "pip._vendor.distlib._backport"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.constants"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.html5parser"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.ihatexml"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.inputstream"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.sanitizer"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.tokenizer"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.utils"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.filters.alphabeticalattributes"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.filters.inject_meta_charset"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.filters.lint"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.filters.optionaltags"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.filters.sanitizer"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.filters.whitespace"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.filters._base"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.filters"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.serializer.htmlserializer"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.serializer"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treebuilders.dom"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treebuilders.etree"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treebuilders.etree_lxml"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treebuilders._base"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treebuilders"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treewalkers.dom"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treewalkers.etree"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treewalkers.genshistream"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treewalkers.lxmletree"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treewalkers.pulldom"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treewalkers._base"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.treewalkers"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.trie.datrie"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.trie.py"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.trie._base"
+2017-09-18T11:08:03: Analyzing "pip._vendor.html5lib.trie"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.adapters"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.api"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.auth"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.certs"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.compat"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.cookies"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.exceptions"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.hooks"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.models"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.sessions"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.status_codes"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.structures"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.utils"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.big5freq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.big5prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.chardistribution"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.charsetgroupprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.charsetprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.codingstatemachine"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.compat"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.constants"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.cp949prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.escprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.escsm"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.eucjpprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.euckrfreq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.euckrprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.euctwfreq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.euctwprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.gb2312freq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.gb2312prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.hebrewprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.jisfreq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.jpcntx"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.langbulgarianmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.langcyrillicmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.langgreekmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.langhebrewmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.langhungarianmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.langthaimodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.latin1prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.mbcharsetprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.mbcsgroupprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.mbcssm"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.sbcharsetprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.sbcsgroupprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.sjisprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.universaldetector"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.utf8prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.charade.__main__"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.big5freq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.big5prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.chardetect"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.chardistribution"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.charsetgroupprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.charsetprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.codingstatemachine"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.compat"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.constants"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.cp949prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.escprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.escsm"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.eucjpprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.euckrfreq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.euckrprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.euctwfreq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.euctwprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.gb2312freq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.gb2312prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.hebrewprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.jisfreq"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.jpcntx"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.langbulgarianmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.langcyrillicmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.langgreekmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.langhebrewmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.langhungarianmodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.langthaimodel"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.latin1prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.mbcharsetprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.mbcsgroupprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.mbcssm"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.sbcharsetprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.sbcsgroupprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.sjisprober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.universaldetector"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet.utf8prober"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.chardet"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.connection"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.connectionpool"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.exceptions"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.fields"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.filepost"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.poolmanager"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.request"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.response"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.util"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3._collections"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.contrib.ntlmpool"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.contrib.pyopenssl"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.contrib"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.packages.ordered_dict"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.packages.six"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.packages"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.packages.ssl_match_hostname._implementation"
+2017-09-18T11:08:03: Analyzing "pip._vendor.requests.packages.urllib3.packages.ssl_match_hostname"
+2017-09-18T11:08:03: Analyzing "pip._vendor._markerlib.markers"
+2017-09-18T11:08:03: Analyzing "pip._vendor._markerlib"
+2017-09-18T11:08:03: Starting analysis of 208 modules
+2017-09-18T11:08:10: Analysis complete
+2017-09-18T11:08:10: Saving group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip"
+2017-09-18T11:08:13: End of group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\pip"
+2017-09-18T11:08:13: Start group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools" with 55 files
+2017-09-18T11:08:13: Parsing "setuptools.archive_util" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\archive_util.py")
+2017-09-18T11:08:13: Parsing "setuptools.compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\compat.py")
+2017-09-18T11:08:13: Parsing "setuptools.depends" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\depends.py")
+2017-09-18T11:08:13: Parsing "setuptools.dist" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\dist.py")
+2017-09-18T11:08:13: Parsing "setuptools.extension" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\extension.py")
+2017-09-18T11:08:13: Parsing "setuptools.lib2to3_ex" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\lib2to3_ex.py")
+2017-09-18T11:08:13: Parsing "setuptools.package_index" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\package_index.py")
+2017-09-18T11:08:13: Parsing "setuptools.py26compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\py26compat.py")
+2017-09-18T11:08:13: Parsing "setuptools.py27compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\py27compat.py")
+2017-09-18T11:08:13: Parsing "setuptools.py31compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\py31compat.py")
+2017-09-18T11:08:13: Parsing "setuptools.sandbox" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\sandbox.py")
+2017-09-18T11:08:13: Parsing "setuptools.ssl_support" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\ssl_support.py")
+2017-09-18T11:08:13: Parsing "setuptools.svn_utils" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\svn_utils.py")
+2017-09-18T11:08:13: Parsing "setuptools.version" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\version.py")
+2017-09-18T11:08:13: Parsing "setuptools" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\__init__.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.alias" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\alias.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.bdist_egg" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\bdist_egg.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.bdist_rpm" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\bdist_rpm.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.bdist_wininst" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\bdist_wininst.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.build_ext" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\build_ext.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.build_py" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\build_py.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.develop" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\develop.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.easy_install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\easy_install.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.egg_info" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\egg_info.py")
+2017-09-18T11:08:13: Parsing "setuptools.command.install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\install.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.install_egg_info" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\install_egg_info.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.install_lib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\install_lib.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.install_scripts" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\install_scripts.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.register" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\register.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.rotate" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\rotate.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.saveopts" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\saveopts.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.sdist" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\sdist.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.setopt" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\setopt.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.test" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\test.py")
+2017-09-18T11:08:14: Parsing "setuptools.command.upload_docs" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\upload_docs.py")
+2017-09-18T11:08:14: Parsing "setuptools.command" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\command\__init__.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.doctest" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\doctest.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.environment" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\environment.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.py26compat" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\py26compat.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.server" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\server.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_bdist_egg" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_bdist_egg.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_build_ext" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_build_ext.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_develop" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_develop.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_dist_info" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_dist_info.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_easy_install" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_easy_install.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_egg_info" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_egg_info.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_markerlib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_markerlib.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_packageindex" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_packageindex.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_resources" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_resources.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_sandbox" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_sandbox.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_sdist" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_sdist.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_svn" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_svn.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_test" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_test.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests.test_upload_docs" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\test_upload_docs.py")
+2017-09-18T11:08:14: Parsing "setuptools.tests" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools\tests\__init__.py")
+2017-09-18T11:08:14: Parsing complete
+2017-09-18T11:08:14: Analyzing "setuptools.archive_util"
+2017-09-18T11:08:14: Analyzing "setuptools.compat"
+2017-09-18T11:08:14: Analyzing "setuptools.depends"
+2017-09-18T11:08:14: Analyzing "setuptools.dist"
+2017-09-18T11:08:14: Analyzing "setuptools.extension"
+2017-09-18T11:08:14: Analyzing "setuptools.lib2to3_ex"
+2017-09-18T11:08:14: Analyzing "setuptools.package_index"
+2017-09-18T11:08:14: Analyzing "setuptools.py26compat"
+2017-09-18T11:08:14: Analyzing "setuptools.py27compat"
+2017-09-18T11:08:14: Analyzing "setuptools.py31compat"
+2017-09-18T11:08:14: Analyzing "setuptools.sandbox"
+2017-09-18T11:08:14: Analyzing "setuptools.ssl_support"
+2017-09-18T11:08:14: Analyzing "setuptools.svn_utils"
+2017-09-18T11:08:14: Analyzing "setuptools.version"
+2017-09-18T11:08:14: Analyzing "setuptools"
+2017-09-18T11:08:14: Analyzing "setuptools.command.alias"
+2017-09-18T11:08:14: Analyzing "setuptools.command.bdist_egg"
+2017-09-18T11:08:14: Analyzing "setuptools.command.bdist_rpm"
+2017-09-18T11:08:14: Analyzing "setuptools.command.bdist_wininst"
+2017-09-18T11:08:14: Analyzing "setuptools.command.build_ext"
+2017-09-18T11:08:14: Analyzing "setuptools.command.build_py"
+2017-09-18T11:08:14: Analyzing "setuptools.command.develop"
+2017-09-18T11:08:14: Analyzing "setuptools.command.easy_install"
+2017-09-18T11:08:14: Analyzing "setuptools.command.egg_info"
+2017-09-18T11:08:14: Analyzing "setuptools.command.install"
+2017-09-18T11:08:14: Analyzing "setuptools.command.install_egg_info"
+2017-09-18T11:08:14: Analyzing "setuptools.command.install_lib"
+2017-09-18T11:08:14: Analyzing "setuptools.command.install_scripts"
+2017-09-18T11:08:14: Analyzing "setuptools.command.register"
+2017-09-18T11:08:14: Analyzing "setuptools.command.rotate"
+2017-09-18T11:08:14: Analyzing "setuptools.command.saveopts"
+2017-09-18T11:08:14: Analyzing "setuptools.command.sdist"
+2017-09-18T11:08:14: Analyzing "setuptools.command.setopt"
+2017-09-18T11:08:14: Analyzing "setuptools.command.test"
+2017-09-18T11:08:14: Analyzing "setuptools.command.upload_docs"
+2017-09-18T11:08:14: Analyzing "setuptools.command"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.doctest"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.environment"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.py26compat"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.server"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_bdist_egg"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_build_ext"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_develop"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_dist_info"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_easy_install"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_egg_info"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_markerlib"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_packageindex"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_resources"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_sandbox"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_sdist"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_svn"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_test"
+2017-09-18T11:08:14: Analyzing "setuptools.tests.test_upload_docs"
+2017-09-18T11:08:14: Analyzing "setuptools.tests"
+2017-09-18T11:08:14: Starting analysis of 55 modules
+2017-09-18T11:08:17: Analysis complete
+2017-09-18T11:08:17: Saving group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools"
+2017-09-18T11:08:18: End of group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\setuptools"
+2017-09-18T11:08:18: Start group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib" with 2 files
+2017-09-18T11:08:18: Parsing "_markerlib.markers" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib\markers.py")
+2017-09-18T11:08:18: Parsing "_markerlib" ("C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib\__init__.py")
+2017-09-18T11:08:18: Parsing complete
+2017-09-18T11:08:18: Analyzing "_markerlib.markers"
+2017-09-18T11:08:18: Analyzing "_markerlib"
+2017-09-18T11:08:18: Starting analysis of 2 modules
+2017-09-18T11:08:19: Analysis complete
+2017-09-18T11:08:19: Saving group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib"
+2017-09-18T11:08:19: End of group "C:\github\PyWLTest\PyWLTest\env\Lib\site-packages\_markerlib"
+2017-09-18T11:08:19: Deleting 0 files
+
+2017-09-18T11:36:26: Start analysis
+2017-09-18T11:36:26: [WARNING] Library was set explicitly - skipping path detection
+2017-09-18T11:36:26: IncludeModulesFromModulePath = win32com
+2017-09-18T11:36:27: Deleting 0 files

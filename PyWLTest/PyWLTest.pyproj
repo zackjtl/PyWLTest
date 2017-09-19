@@ -13,7 +13,7 @@
     <Name>PyWLTest</Name>
     <RootNamespace>PyWLTest</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterId>{73e4fd43-e687-4233-a5eb-5388898fb953}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -42,7 +42,13 @@
     <Compile Include="IPC.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="seq_mode.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="name_gen.py" />
+    <Compile Include="osinfo.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="partial_mode.py">
       <SubType>Code</SubType>
     </Compile>
@@ -56,7 +62,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
+    <Interpreter Include="env\">
+      <Id>{73e4fd43-e687-4233-a5eb-5388898fb953}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env (Python 64-bit 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

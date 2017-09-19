@@ -2,9 +2,11 @@ import os
 from contextlib import contextmanager
 from ctypes import *
 import time
+import osinfo
 
-__thisdir = os.path.dirname(__file__)
-__iolib = WinDLL(__thisdir + '\\io.dll')
+
+__iolib=WinDLL(osinfo.libdir + '\\io.dll')
+
 __file = None
 __flag = None
 
