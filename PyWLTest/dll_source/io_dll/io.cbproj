@@ -5,7 +5,7 @@
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
-        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Library</AppType>
     </PropertyGroup>
@@ -103,7 +103,6 @@
         <DynamicRTL>false</DynamicRTL>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
         <UsePackages>false</UsePackages>
-        <VerInfo_Locale>1028</VerInfo_Locale>
         <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
         <BCC_DisableOptimizations>true</BCC_DisableOptimizations>
         <DCC_Optimize>false</DCC_Optimize>
@@ -126,7 +125,8 @@
         <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <FinalOutputDir>C:\Users\eti032.ETI\Source\Repos\PyWLTest\PyWLTest\</FinalOutputDir>
+        <ILINK_HeapReserveSize>0x00200000</ILINK_HeapReserveSize>
+        <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_RemoteDebug>true</DCC_RemoteDebug>
         <Debugger_HostApplication>C:\Program Files\ConEmu\ConEmu.exe</Debugger_HostApplication>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
@@ -153,6 +153,9 @@
         <LinkPackageStatics>rtl.lib;vcl.lib</LinkPackageStatics>
     </PropertyGroup>
     <ItemGroup>
+        <None Include="HandleManager.h">
+            <BuildOrder>4</BuildOrder>
+        </None>
         <CppCompile Include="interface.cpp">
             <DependentOn>interface.h</DependentOn>
             <BuildOrder>4</BuildOrder>
@@ -162,8 +165,11 @@
         </CppCompile>
         <PCHCompile Include="ioPCH1.h">
             <BuildOrder>0</BuildOrder>
-            <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="mersenne.cpp">
+            <DependentOn>mersenne.h</DependentOn>
+            <BuildOrder>3</BuildOrder>
+        </CppCompile>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -190,6 +196,8 @@
                 <Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\bcboffice2k210.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\bcbofficexp210.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k210.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp210.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </CPlusPlusBuilder.Personality>
             <Deployment>
@@ -220,12 +228,6 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\Users\eti032.ETI\Source\Repos\PyWLTest\PyWLTest\io.tds" Configuration="Debug" Class="DebugSymbols">
-                    <Platform Name="Win32">
-                        <RemoteName>io.tds</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin64\cc64160mt.dll" Class="DependencyModule">
                     <Platform Name="Win64">
                         <Overwrite>true</Overwrite>
@@ -250,6 +252,12 @@
                 </DeployFile>
                 <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
                     <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\lib\Win32\io.dll" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>io</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

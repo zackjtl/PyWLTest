@@ -15,9 +15,9 @@ def make_error(base:BaseException, code, msg:str='', digits:int=4):
 	class ErrorCode(base):
 		"""description of class"""
 		def __init__(self, code:int, msg:str, digits:int):
-			super(ErrorCode, self).__init__(msg)
+			#super(ErrorCode, self).__init__(msg)
 			self.code = code
-			self.msg = '[{:0{}x}] '.format(code, digits) +  msg	
+			self.args = ('[{:0{}x}] '.format(code, digits) +  msg, )
 
 	if (issubclass(type(code), enum.Enum)):
 		error = ErrorCode(code.value, msg, digits)						
@@ -26,5 +26,10 @@ def make_error(base:BaseException, code, msg:str='', digits:int=4):
 	
 	return error
 			
-def raise_error(base:BaseException, code, msg:str='', digits:int=4):
+class fiotest_error(BaseException):
+	def __init__(self, code:int, msg:str='', digits:int=4):
+		self.code = code
+		self.args = ('[{:0{}x}] '.format(code, digits) +  msg, )
+
+def raise_error(base:BaseException=BaseException, code=0, msg:str='', digits:int=4):
 	raise(make_error(base, code, msg, digits))

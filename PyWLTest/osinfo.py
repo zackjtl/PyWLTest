@@ -2,10 +2,14 @@ import platform
 import os
 
 def is_64Bit():
+	ms = platform.machine()
 	return platform.machine().endswith('64')
 
 def is_32Bit():
-	return platform.machine().endswith('32') 
+	if (platform.machine().endswith('32') or platform.machine().endswith('x86')):
+		return True
+	return False
+		
 
 def is_windows():
 	return os.name.startswith('nt')

@@ -3,12 +3,22 @@ from contextlib import contextmanager
 from ctypes import *
 import time
 import osinfo
+from errorcode import *
 
+class fio_res(Structure):
+	_fields_ = [
+		("io_count", c_int),
+		("spend_time", c_int),
+		("error_code", c_int),
+		("rsvd", c_int)]
 
 __iolib=WinDLL(osinfo.libdir + '\\io.dll')
 
 __file = None
 __flag = None
+
+__iolib.file_write_auto_pattern.restype = fio_res
+__iolib.file_read_auto_pattern.restype = fio_res
 
 @contextmanager
 def fopen(fileName:str, flags:str):
@@ -64,3 +74,40 @@ def fclose4wr(file:c_voidp):
 
 def fclose4rd(file:c_voidp):
 	return __iolib.fclose_4rd(file)
+
+def init_pattern(chunk_size:int, chunk_number:int, seed:int):
+	__iolib.init_pattern(chunk_size, chunk_number, seed)
+
+def free_buffer():
+	__iolib.free_buffer()
+
+def file_write_auto_pattern(fileName:str, sector_cnt:int, seed:int):
+	fnameBuff = create_string_buffer(fileName.encode('utf-8'))
+
+	res = __iolib.file_write_auto_pattern(fnameBuff, sector_cnt, seed)
+
+	if (res.error_code != 0):
+		if (res.error_code == 1):
+			raise_error('Can not open file ' + fileName, myerror.file_error)
+
+	return res.io_count, res.spend_time
+
+
+def file_read_auto_pattern(fileName:str, sector_cnt:int, seed:int):
+	fnameBuff = create_string_buffer(fileName.encode('utf-8'))
+
+	res = __iolib.file_read_auto_pattern(fnameBuff, sector_cnt, seed)
+
+	if (res.error_code != 0):
+		if (res.error_code == 1):
+			raise_error(msg='Can not open file ' + fileName, code = myerror.file_error)
+		elif (res.error_code == 2):
+			raise_error(msg='Can not read file ' + fileName, code = myerror.file_error)
+		elif (res.error_code == 3):
+			raise_error(msg='Pattern compare failed ' + fileName, code = myerror.pattern_error)
+
+	return res.io_count, res.spend_time
+
+def force_pat_error():
+	__iolib.test_force_pattern_error()
+	
