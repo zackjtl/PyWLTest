@@ -1,8 +1,8 @@
-requests
+six
 _markerlib
 absolute_import
 distlib
 colorama
-six
+requests
 pkg_resources
 html5lib

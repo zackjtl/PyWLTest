@@ -13,7 +13,7 @@
     <Name>PyWLTest</Name>
     <RootNamespace>PyWLTest</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <InterpreterId>MSBuild|{73e4fd43-e687-4233-a5eb-5388898fb953}|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>Global|PythonCore|3.4</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,9 +41,12 @@
     <Compile Include="IPC.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="perf_sender.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="PySmart\basicSmartInfo.py" />
+    <Compile Include="PySmart\demo.py" />
+    <Compile Include="PySmart\osinfo.py" />
+    <Compile Include="PySmart\PySmart.py" />
+    <Compile Include="PySmart\smartHeader.py" />
+    <Compile Include="PySmart\__init__.py" />
     <Compile Include="seq_mode.py">
       <SubType>Code</SubType>
     </Compile>
@@ -79,7 +82,88 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|PythonCore|3.4-32" />
+    <InterpreterReference Include="Global|PythonCore|3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PySmart\" />
+    <Folder Include="PySmart\.git\" />
+    <Folder Include="PySmart\.git\hooks\" />
+    <Folder Include="PySmart\.git\info\" />
+    <Folder Include="PySmart\.git\logs\" />
+    <Folder Include="PySmart\.git\logs\refs\" />
+    <Folder Include="PySmart\.git\logs\refs\heads\" />
+    <Folder Include="PySmart\.git\logs\refs\remotes\" />
+    <Folder Include="PySmart\.git\logs\refs\remotes\origin\" />
+    <Folder Include="PySmart\.git\objects\" />
+    <Folder Include="PySmart\.git\objects\09\" />
+    <Folder Include="PySmart\.git\objects\0a\" />
+    <Folder Include="PySmart\.git\objects\26\" />
+    <Folder Include="PySmart\.git\objects\40\" />
+    <Folder Include="PySmart\.git\objects\45\" />
+    <Folder Include="PySmart\.git\objects\75\" />
+    <Folder Include="PySmart\.git\objects\76\" />
+    <Folder Include="PySmart\.git\objects\96\" />
+    <Folder Include="PySmart\.git\objects\9e\" />
+    <Folder Include="PySmart\.git\objects\a0\" />
+    <Folder Include="PySmart\.git\objects\bc\" />
+    <Folder Include="PySmart\.git\objects\be\" />
+    <Folder Include="PySmart\.git\objects\da\" />
+    <Folder Include="PySmart\.git\objects\e7\" />
+    <Folder Include="PySmart\.git\objects\ec\" />
+    <Folder Include="PySmart\.git\objects\f3\" />
+    <Folder Include="PySmart\.git\objects\fc\" />
+    <Folder Include="PySmart\.git\objects\info\" />
+    <Folder Include="PySmart\.git\objects\pack\" />
+    <Folder Include="PySmart\.git\refs\" />
+    <Folder Include="PySmart\.git\refs\heads\" />
+    <Folder Include="PySmart\.git\refs\remotes\" />
+    <Folder Include="PySmart\.git\refs\remotes\origin\" />
+    <Folder Include="PySmart\.git\refs\tags\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PySmart\.git\COMMIT_EDITMSG" />
+    <Content Include="PySmart\.git\config" />
+    <Content Include="PySmart\.git\description" />
+    <Content Include="PySmart\.git\FETCH_HEAD" />
+    <Content Include="PySmart\.git\HEAD" />
+    <Content Include="PySmart\.git\hooks\applypatch-msg.sample" />
+    <Content Include="PySmart\.git\hooks\commit-msg.sample" />
+    <Content Include="PySmart\.git\hooks\post-update.sample" />
+    <Content Include="PySmart\.git\hooks\pre-applypatch.sample" />
+    <Content Include="PySmart\.git\hooks\pre-commit.sample" />
+    <Content Include="PySmart\.git\hooks\pre-push.sample" />
+    <Content Include="PySmart\.git\hooks\pre-rebase.sample" />
+    <Content Include="PySmart\.git\hooks\pre-receive.sample" />
+    <Content Include="PySmart\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="PySmart\.git\hooks\update.sample" />
+    <Content Include="PySmart\.git\index" />
+    <Content Include="PySmart\.git\info\exclude" />
+    <Content Include="PySmart\.git\logs\HEAD" />
+    <Content Include="PySmart\.git\logs\refs\heads\master" />
+    <Content Include="PySmart\.git\logs\refs\remotes\origin\HEAD" />
+    <Content Include="PySmart\.git\logs\refs\remotes\origin\master" />
+    <Content Include="PySmart\.git\objects\09\3e46b04c4d630346fc9a71dd70ae76ad7e3874" />
+    <Content Include="PySmart\.git\objects\0a\352aac91c8e570271c5cbec7826c86decea6cc" />
+    <Content Include="PySmart\.git\objects\26\10d93e8c012f6ad02563d2b4050fba03451568" />
+    <Content Include="PySmart\.git\objects\40\247483f668e5eefb72f7b9c49a087c36cafa16" />
+    <Content Include="PySmart\.git\objects\45\8a9e373d0345c8578faa18a3f53f38653abc9c" />
+    <Content Include="PySmart\.git\objects\75\52f7ff01c6c30f07abf1ff4da66d83c36c8326" />
+    <Content Include="PySmart\.git\objects\76\fa94a136f1ab048bd4e9493b28b32048fcfce4" />
+    <Content Include="PySmart\.git\objects\96\f29c4c2fd9a49bb6d6a33538ce04df20b572dc" />
+    <Content Include="PySmart\.git\objects\9e\5ae6bd506bd5255368165fe5e281931601e727" />
+    <Content Include="PySmart\.git\objects\a0\227cf814e47dcb68bba2181727c2ea2e1a9b6f" />
+    <Content Include="PySmart\.git\objects\bc\17d188b7b4346bc96b2898b6c09f21db0add8e" />
+    <Content Include="PySmart\.git\objects\bc\6ec5b3c5a4269f2815fa35fe1696727a3a4f2d" />
+    <Content Include="PySmart\.git\objects\be\02913a337ecd9ac0b42700b6db243cf2f81e09" />
+    <Content Include="PySmart\.git\objects\da\b6452129287c02231034dac8d2a8f79c709feb" />
+    <Content Include="PySmart\.git\objects\e7\e28a17bf82a2a671be3933e2c0b3232d31b49e" />
+    <Content Include="PySmart\.git\objects\ec\6b775f6777d751fa14b085d06dc0365d12c7d7" />
+    <Content Include="PySmart\.git\objects\f3\69e3321d234c27e9a2e0473487c4e9792e01db" />
+    <Content Include="PySmart\.git\objects\fc\90fd4ea09d8779a154aa6cb1373411f0065633" />
+    <Content Include="PySmart\.git\packed-refs" />
+    <Content Include="PySmart\.git\refs\heads\master" />
+    <Content Include="PySmart\.git\refs\remotes\origin\HEAD" />
+    <Content Include="PySmart\.git\refs\remotes\origin\master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

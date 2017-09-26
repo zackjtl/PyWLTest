@@ -13,7 +13,7 @@ from fiotest import *
 from progress import *
 from errorcode import *
 
-def execute(drive:str, minFile, maxFile, testPercent, loops:int, root_seed:int=None, ipc=None):
+def execute(devName:str, minFile, maxFile, testPercent, loops:int, root_seed:int=None, ipc=None):
 	""" 
 	drive:	the target device to test
 	minFile (unit:MB): minimum file size (for both fixed and partial)
@@ -25,9 +25,9 @@ def execute(drive:str, minFile, maxFile, testPercent, loops:int, root_seed:int=N
 	if (ipc==None):
 		ipc=IPC() #create an empty IPC which do nothing
 		
-	path = drive + ':\\'	
+	root_path = devName + ':\\'	
 
-	capacity = int(diskutil.get_disk_size(path)['total'] / 512)
+	capacity = int(diskutil.get_disk_size(root_path)['total'] / 512)
 
 	minSectors = minFile * 2048
 	maxSectors = maxFile * 2048	
@@ -45,21 +45,23 @@ def execute(drive:str, minFile, maxFile, testPercent, loops:int, root_seed:int=N
 		random.seed(cycle_seed)
 		seeds = [random.randint(0, 0xffffffff) for i in range(2)]
 
-		fs1 = fileset(path, testSectors, minSectors, maxSectors, 'static', seeds[0])
+		fs1 = fileset(root_path, testSectors, minSectors, maxSectors, 'static', seeds[0])
 		matrix = filematrix((fs1, ), Relationship.ordered)
 
-		with fio_test(path, matrix, seeds[1], ipc) as tester:				
-			try:
-				tester.delete_all()					
+		with fio_test(devName, matrix, seeds[1], ipc) as tester:				
+			try:							
+				tester.delete_all()
 				tester.write_all(sub_progress(prog, 0, 50))		
 				tester.read_all(sub_progress(prog, 50, 50))				
 
 				print('write performance: {} MB/s'.format(tester.get_last_write_perf()))
-				print('read performance: {} MB/s'.format(tester.get_last_read_perf()))
-				
+				print('read performance: {} MB/s'.format(tester.get_last_read_perf()))			
+
 				total_prog += total_weight					
 				ipc.send_total_progress(total_prog)			
 				ipc.send_sub_progress(100)	
+
+				tester.read_smart()
 
 				cycle_seed = random.randint(0, 0xffffffff)
 

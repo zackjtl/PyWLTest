@@ -33,7 +33,6 @@ DEVELOP_DIST
 maxsize
 shutil
 bdist_egg
-__file__
 site
 stat
 platform

@@ -3,7 +3,6 @@ tempfile
 PackageIndex
 urlparse
 os
-cached_property
 logger
 HTTPBasicAuthHandler
 subprocess

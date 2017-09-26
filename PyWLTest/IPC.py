@@ -8,6 +8,7 @@ import sys
 
 import progress
 
+from PySmart.smartHeader import *
 #sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #conn = socket.socket()
 
@@ -40,7 +41,10 @@ class PayloadType(enum.Enum):
 	total_progress = 3
 	write_perf = 4
 	read_perf = 5
-	error_str = 6
+
+	smart_header = 6
+	smart_earase_cnt_rawdata = 7
+	error_str = 99
 	
 
 class status_payload(ctypes.Structure):
@@ -57,6 +61,13 @@ class performance_payload(ctypes.Structure):
 	_fields_ = [('signature', ctypes.c_int16),
 				('type', ctypes.c_int16),
 				('performance', ctypes.c_float)]
+
+class smart_header_payload(ctypes.Structure):
+	_pack_ = 1
+	_fields_ = [('signature', ctypes.c_int16),
+				('type', ctypes.c_int16),
+				('header', SmartHeader)]
+
 
 class IPC(object):
 			
@@ -230,3 +241,45 @@ class IPC(object):
 			ctypes.memmove(buff, ctypes.byref(p), ctypes.sizeof(p))
 
 			self.conn.sendall(buff)
+
+	def send_smart_header(self, smartHeader:SmartHeader):
+		if (self.conn == None):
+			return
+
+		with locker(sock_lock) as lock:
+			if not lock.acquired():
+				return
+			self.conn.setblocking(True)		
+	
+			p = smart_header_payload(0x55aa, PayloadType.smart_header.value, smartHeader)
+		
+			buff = bytes(ctypes.sizeof(p))
+			ctypes.memmove(buff, ctypes.byref(p), ctypes.sizeof(p))
+
+			self.conn.sendall(buff)
+
+
+	def send_smart_erase_cnt_rawdata(self, smartRawData):
+		if (self.conn == None):
+			return
+
+		with locker(sock_lock) as lock:
+			if not lock.acquired():
+				return
+			self.conn.setblocking(True)		
+
+			class smart_rawdata_payload(ctypes.Structure):
+				_pack_ = 1
+				_fields_ = [('signature', ctypes.c_int16),
+							('type', ctypes.c_int16),
+							('header', type(smartRawData))]
+	
+			p = smart_rawdata_payload(0x55aa, PayloadType.smart_earase_cnt_rawdata.value, smartRawData)
+		
+			sz = sizeof(p)
+
+			buff = bytes(ctypes.sizeof(p))
+			ctypes.memmove(buff, ctypes.byref(p), ctypes.sizeof(p))
+
+			self.conn.sendall(buff)
+

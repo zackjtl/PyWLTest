@@ -72,6 +72,7 @@ iter_entry_points
 utime
 FileMetadata
 BINARY_DIST
+isdir
 null_ns_handler
 parse_version
 imp
@@ -83,6 +84,7 @@ get_distribution
 get_supported_platform
 PathMetadata
 declare_namespace
+unlink
 sys
 list
 test
@@ -100,6 +102,7 @@ SOURCE_DIST
 os_open
 urlunparse
 urlparse
+rename
 CHECKOUT_DIST
 AvailableDistributions
 execfile

@@ -16,7 +16,6 @@ if_dl
 DistutilsSetupError
 DistutilsOptionError
 DistutilsModuleError
-RTLD_NOW
 get_config_var
 DistutilsFileError
 hasattr

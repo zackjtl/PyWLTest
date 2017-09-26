@@ -16,11 +16,11 @@ def create_communication(ipc:IPC):
 
 def dotest():
 	global ipc
-
+	
 	try:
 		create_communication(ipc)
 		#partial_mode.execute('D', 0.5, 2, 10, 50, 3000, 0x12345678, ipc)
-		seq_mode.execute('K', 0.5, 5, 1.0, 3, 0x12345678, ipc)
+		seq_mode.execute('D', 0.5, 5, 1.0, 3, 0x12345678, ipc)
 
 	except BaseException as err:
 		print("------------- error message ------------")

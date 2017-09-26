@@ -59,7 +59,7 @@ def read(length:int, file:c_voidp):
 	global __iolib
 	_type_buff = c_ubyte * (length)
 	buff = _type_buff()
-	
+
 	_type_ulongp = c_ulong * 1
 	bytes_read_p = _type_ulongp()
 

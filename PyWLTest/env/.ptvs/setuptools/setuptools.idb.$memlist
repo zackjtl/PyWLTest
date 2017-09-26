@@ -29,7 +29,6 @@ setuptools
 Distribution
 os
 find_packages
-tests
 compat
 __version__
 svn_utils

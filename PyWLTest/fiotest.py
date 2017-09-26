@@ -21,14 +21,17 @@ from contextlib import contextmanager
 from errorcode import *
 from progress import *
 
+import PySmart.PySmart as PySmart
+
 def debug_info_en():
 	logging.basicConfig(level=logging.INFO)
 
 class fio_test(object):
 	"""test by file read write to a disk"""
-	def __init__(self, root: str, matrix: filematrix, random_seed: int, IPC:IPC=None):
+	def __init__(self, devName: str, matrix: filematrix, random_seed: int, IPC:IPC=None):
 		thisdir = os.path.dirname(__file__)
-		self.root = root
+		self.devName = devName
+		self.root = devName + r':\\'
 		self.seed = random_seed
 		self.filematrix = matrix
 		self.max_buff_size = 4096
@@ -45,7 +48,7 @@ class fio_test(object):
 		self.__prepair_patterns()
 		self.IPC = IPC
 		self.perf_update = None
-		self.reset()
+		self.reset()		
 
 	def reset(self, lock_static:bool=None):		
 		#self.__reset_pat()
@@ -243,6 +246,13 @@ class fio_test(object):
 			if (fs.mode is fsmode.dynamic):
 				delete_dir(fs.path)
 				os.rmdir(fs.path)
+
+	def read_smart(self):
+		smart = PySmart.SmartInfo()
+		smart.Read(self.devName + ':')
+		self.IPC.send_smart_header(smart.SmartHeader)
+		self.IPC.send_smart_erase_cnt_rawdata(smart.EraseCountRawData)
+	
 
 	def send_write_performance(self):
 		self.IPC.send_write_performance(self.get_last_write_perf())

@@ -8,11 +8,11 @@
 #include <iostream>
 #include <windows.h>
 //---------------------------------------------------------------------------
-static unsigned char** buffer;
-static int chunkSize;
-static int maxChunk;
-static bool forcePatError = false;
-static bool pattern_created = false;
+unsigned char** buffer;
+int chunkSize;
+int maxChunk;
+bool forcePatError = false;
+bool pattern_created = false;
 //---------------------------------------------------------------------------
 void* __stdcall fopen_4wr(const char* FilePath, const char* Flags)
 {
